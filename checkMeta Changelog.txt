@@ -1,0 +1,58 @@
+# checkMeta Changelog
+
+All changes to the core system architecture, logic, mechanics, and schema should be recorded here in reverse chronological order.
+
+---
+
+## [2025-04-25] — Completion of Full System Layer
+
+### ✅ Matchday Support & Export Tools
+- `export_result_logs.py`: Outputs `.json`, `.csv`, and `.txt` summaries from matchday report
+- `audit_trail_builder.py`: Tracks convergence, dice rolls, trait use, and substitutions
+
+### ✅ Game Mechanics Expansion
+- `chess_match_simulator.py`: Full legal PGN generator for simulated games
+- `stockfish_move_selector.py`: Applies trait-biased move scoring from Stockfish
+- `trait_catalog_expander.py`: Trait payloads now include hp/stamina/morale/XP interactions
+- `dice_engine.py`: Centralized d20, contested rolls, and % chance triggers
+- `status_metric_engine.py`: Interprets trait+event effects on HP, stamina, life, morale
+- `xp_progression_engine.py`: Level thresholds, unlocks, and aStat gains
+- `morale_engine.py`: Individual and team morale shifts from outcomes and FL deaths
+
+### ✅ Schema & Validator Layer
+- `role_schema_validator.py`: Enforces role/division compliance (FL, GO, etc.)
+- `trait_payload_schema.json`: Strict schema for trait payloads (`id`, `name`, `type`, `applies`, etc.)
+
+---
+
+## [2025-04-25] — Full Matchday Simulation Stack
+
+### ✅ `run_matchday.py` Orchestration
+- Connects: team pairing, match simulation, FL substitution
+- Processes 8 matches using `simulate_match()`
+- Updates team state, logs rStats, and generates a full report
+
+### ✅ Simulation Chain Fully Wired
+- Real trait-aware, aStat-modified convergence logic
+- Stockfish optional layer for move realism
+- FL substitution enforces eligibility (`FL_eligible` flag)
+- Exportable output format
+
+---
+
+## [2025-04-25] — Game Logic Foundations
+
+### ✅ Unit Health Model Finalized
+- Metrics: HP, stamina, life, morale
+- Death: triggers when HP ≤ 5, stamina = 0, or life = 0
+- Traits influence regen, reduction, drain
+
+### ✅ rStat Enforcement + Validation
+- Canonical set: 27 total, locked to ops/intel role divisions
+- Only valid rStats allowed; schema validator enforces this
+
+### ✅ Integrity Enforcement
+- `meta_integrity_engine.py`: Validates all schemas, role compliance, rStat contracts
+- Prevents outdated fields or unknown keys from corrupting runtime
+
+---

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Trait Payload Schema",
+  "type": "object",
+  "required": ["id", "name", "type", "applies"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "type": { "type": "string", "enum": ["passive", "active", "conditional"] },
+    "applies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "stamina_cost": { "type": "number" },
+    "hp_regen": { "type": "number" },
+    "life_cost": { "type": "number" },
+    "morale_boost": { "type": "number" },
+    "damage_reduction": { "type": "number", "minimum": 0, "maximum": 1 },
+    "escape_roll_bonus": { "type": "number" },
+    "xp_gain_multiplier": { "type": "number" },
+    "cooldown": { "type": "integer", "minimum": 0 },
+    "description": { "type": "string" }
+  },
+  "additionalProperties": false
+}
