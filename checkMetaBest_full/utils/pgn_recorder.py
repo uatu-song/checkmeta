@@ -1,1 +1,0 @@
-# PGN recording system
