@@ -1,0 +1,133 @@
+Good — very good tactical move.  
+You're saying:
+
+> "**Revise the plans to just *stub out* SynergyTracker (not fully build it), and postpone full integration until `v4` release.**"
+
+**Smart — here's exactly how we should adjust:**
+
+---
+
+# **Revised Strategy: SynergyTracker for v4**
+
+## 1. **Current Version (v3.1 → v3.2 Patch Plan)**
+
+- Focus **only** on:
+  - Config management
+  - Date flexibility
+  - Batch size flexibility
+  - Unified timestamping
+  - Error-resilient file saving
+  - Bugfixes, internal polish
+
+- **NO real SynergyTracker yet.**
+
+**But:**  
+We create a *stub class* `SynergyTracker`, to reserve its spot cleanly for future use.
+
+---
+
+## 2. **Stub SynergyTracker Plan for v3.2**
+
+| Component | Status |
+|:----------|:-------|
+| `systems/synergy_tracker.py` | Create an empty shell with class + method placeholders. |
+| `meta_simulator.py` integration | Soft-load `SynergyTracker`, but **do nothing** yet. |
+| `match_context` | Add `"synergy_activations": []` during match setup, but leave empty. |
+| `AdvancedFeatureManager` | (Optional) Soft-enable Synergy if toggle is True, but log "Synergy tracking not active yet." |
+
+---
+
+## 3. **Stub Code Example**
+
+**systems/synergy_tracker.py**
+```python
+class SynergyTracker:
+    def __init__(self, match_context):
+        self.match_context = match_context
+
+    def detect_static_synergies(self, team_a, team_b):
+        # Placeholder: no synergy logic yet
+        pass
+
+    def detect_dynamic_synergies(self, team_a, team_b, round_num):
+        # Placeholder: no synergy logic yet
+        pass
+
+    def log_synergy_activation(self, synergy_event):
+        # Placeholder: will eventually log events
+        pass
+```
+
+**meta_simulator.py**
+```python
+self.synergy_tracker = SynergyTracker(self.match_context)  # Stub: Safe to initialize
+```
+
+---
+  
+## 4. **Version Planning Summary**
+
+| Version | Goals |
+|:--------|:------|
+| **v3.2** | Core engine stability (dates, batch size, error handling), stub synergy tracker added but inactive |
+| **v4.0** | Full synergy system activation, real team synergies, chain reactions, formation bonuses |
+
+---
+
+# **Why This is the Right Move**
+
+- Keeps `meta_simulator.py` **future-proof** without hardcoding later.
+- Leaves **no broken hooks** — smooth upgrade path.
+- Avoids unnecessary code churn when synergy really arrives.
+- v3.2 remains **small, clean, and maintainable**.
+
+---
+
+# **Timeline Reality Check**
+
+| Task | Est. Effort |
+|:-----|:------------|
+| Config management | 0.5–1 day |
+| Date flexibility upgrades | 1 day |
+| Unified timestamping | 0.5 day |
+| Resilient file saves | 0.5 day |
+| Batch size flexibility | 0.5 day |
+| SynergyTracker stub (system + simulator integration) | 0.5 day |
+
+---
+
+# **High-Level Visual Plan**
+
+```
+[Fix Engine Core]  --->  [Stub SynergyTracker]  --->  [Release v3.2 Stable]
+                                |
+                                ---> [Full Synergy Engine in v4]
+```
+
+---
+
+# **Next Step Options**
+
+- I can **build the stub `synergy_tracker.py`** file immediately.
+- I can **write a patch plan** for `meta_simulator.py` to include the stub properly.
+- I can **draft a "What's New in v3.2" changelog** describing the improvements clearly for documentation.
+
+---
+
+# **Summary**
+
+| Your Decision | My Action |
+|:--------------|:----------|
+| Defer full synergy engine to v4 | Agreed |
+| Stub SynergyTracker now for v3.2 | Agreed |
+| Prioritize simulation stability upgrades first | Agreed |
+
+---
+
+**Would you like me to:**
+- Start with the `synergy_tracker.py` stub creation?
+- Or build the `config.py` starter first to get engine fixes rolling?
+
+**Choose your next move.  
+We are totally aligned now.**  
+Ready.

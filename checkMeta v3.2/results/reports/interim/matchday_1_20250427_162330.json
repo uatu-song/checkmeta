@@ -1,0 +1,3643 @@
+{
+  "day": 1,
+  "date": "2025-04-07",
+  "timestamp": "20250427_162330",
+  "matches": 5,
+  "results": [
+    {
+      "team_a_name": "Xavier's School",
+      "team_b_name": "Brotherhood",
+      "team_a_id": "t001",
+      "team_b_id": "t002",
+      "team_a_wins": 2,
+      "team_b_wins": 3,
+      "winner": "Team B",
+      "winning_team": "Brotherhood",
+      "convergence_count": 25,
+      "trait_activations": 10,
+      "character_results": [
+        {
+          "character_id": "t001_0",
+          "character_name": "Rogue",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_1",
+          "character_name": "Domino",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_2",
+          "character_name": "Magik",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_3",
+          "character_name": "Colossus",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_4",
+          "character_name": "Gambit",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_5",
+          "character_name": "Doctor Strange",
+          "team": "A",
+          "role": "GO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_6",
+          "character_name": "Emma Frost",
+          "team": "A",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_7",
+          "character_name": "Jean Grey (Phoenix)",
+          "team": "A",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_8",
+          "character_name": "Hawkeye",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_9",
+          "character_name": "Quicksilver",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_10",
+          "character_name": "Shang-Chi",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t001_11",
+          "character_name": "Venom",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_0",
+          "character_name": "Iron Man",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_1",
+          "character_name": "Nova",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_2",
+          "character_name": "Spider-Man (Parker)",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_3",
+          "character_name": "Super-Skrull",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_4",
+          "character_name": "Brawn (Totally Awesome Hulk)",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_5",
+          "character_name": "The Wasp",
+          "team": "B",
+          "role": "GO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_6",
+          "character_name": "Forge",
+          "team": "B",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_7",
+          "character_name": "Hulkling (Teddy Altman)",
+          "team": "B",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_8",
+          "character_name": "Brother Voodoo",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_9",
+          "character_name": "Invisible Woman",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_10",
+          "character_name": "Punisher",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t002_11",
+          "character_name": "Wiccan",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        }
+      ],
+      "top_performer": {
+        "name": "Rogue",
+        "team": "A",
+        "stat_type": "damage",
+        "value": 200
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 2,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 3,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 4,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 5,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        }
+      ],
+      "field_leader_substitutions": [],
+      "convergence_logs": [
+        {
+          "square": "e4",
+          "a_roll": 50,
+          "b_roll": 70,
+          "winner": "Rogue",
+          "loser": "Iron Man",
+          "damage": 10,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 53,
+          "b_roll": 77,
+          "winner": "Domino",
+          "loser": "Nova",
+          "damage": 11,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 56,
+          "b_roll": 84,
+          "winner": "Magik",
+          "loser": "Spider-Man (Parker)",
+          "damage": 12,
+          "reduced_damage": 7,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 59,
+          "b_roll": 91,
+          "winner": "Colossus",
+          "loser": "Super-Skrull",
+          "damage": 13,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 62,
+          "b_roll": 98,
+          "winner": "Gambit",
+          "loser": "Brawn (Totally Awesome Hulk)",
+          "damage": 14,
+          "reduced_damage": 9,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 65,
+          "b_roll": 55,
+          "winner": "Doctor Strange",
+          "loser": "The Wasp",
+          "damage": 15,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 68,
+          "b_roll": 62,
+          "winner": "Emma Frost",
+          "loser": "Forge",
+          "damage": 16,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 71,
+          "b_roll": 69,
+          "winner": "Jean Grey (Phoenix)",
+          "loser": "Hulkling (Teddy Altman)",
+          "damage": 17,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 74,
+          "b_roll": 76,
+          "winner": "Hawkeye",
+          "loser": "Brother Voodoo",
+          "damage": 18,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 77,
+          "b_roll": 83,
+          "winner": "Quicksilver",
+          "loser": "Invisible Woman",
+          "damage": 19,
+          "reduced_damage": 14,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 80,
+          "b_roll": 90,
+          "winner": "Shang-Chi",
+          "loser": "Punisher",
+          "damage": 20,
+          "reduced_damage": 15,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 83,
+          "b_roll": 97,
+          "winner": "Venom",
+          "loser": "Wiccan",
+          "damage": 21,
+          "reduced_damage": 16,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 86,
+          "b_roll": 54,
+          "winner": "Iron Man",
+          "loser": "Rogue",
+          "damage": 22,
+          "reduced_damage": 17,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 89,
+          "b_roll": 61,
+          "winner": "Nova",
+          "loser": "Domino",
+          "damage": 23,
+          "reduced_damage": 18,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 92,
+          "b_roll": 68,
+          "winner": "Spider-Man (Parker)",
+          "loser": "Magik",
+          "damage": 24,
+          "reduced_damage": 19,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 95,
+          "b_roll": 75,
+          "winner": "Super-Skrull",
+          "loser": "Colossus",
+          "damage": 25,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 98,
+          "b_roll": 82,
+          "winner": "Brawn (Totally Awesome Hulk)",
+          "loser": "Gambit",
+          "damage": 26,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 51,
+          "b_roll": 89,
+          "winner": "The Wasp",
+          "loser": "Doctor Strange",
+          "damage": 27,
+          "reduced_damage": 7,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 54,
+          "b_roll": 96,
+          "winner": "Forge",
+          "loser": "Emma Frost",
+          "damage": 28,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 57,
+          "b_roll": 53,
+          "winner": "Hulkling (Teddy Altman)",
+          "loser": "Jean Grey (Phoenix)",
+          "damage": 29,
+          "reduced_damage": 9,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 60,
+          "b_roll": 60,
+          "winner": "Brother Voodoo",
+          "loser": "Hawkeye",
+          "damage": 10,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 63,
+          "b_roll": 67,
+          "winner": "Invisible Woman",
+          "loser": "Quicksilver",
+          "damage": 11,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 66,
+          "b_roll": 74,
+          "winner": "Punisher",
+          "loser": "Shang-Chi",
+          "damage": 12,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 69,
+          "b_roll": 81,
+          "winner": "Wiccan",
+          "loser": "Venom",
+          "damage": 13,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 72,
+          "b_roll": 88,
+          "winner": "Rogue",
+          "loser": "Iron Man",
+          "damage": 14,
+          "reduced_damage": 14,
+          "outcome": "success"
+        }
+      ],
+      "trait_logs": [
+        {
+          "round": 1,
+          "character": "Rogue",
+          "trait": "genius",
+          "effect": "Added 5 to combat roll"
+        },
+        {
+          "round": 2,
+          "character": "Domino",
+          "trait": "tactical",
+          "effect": "Added 6 to defense"
+        },
+        {
+          "round": 3,
+          "character": "Magik",
+          "trait": "armor",
+          "effect": "Added 7 to damage"
+        },
+        {
+          "round": 4,
+          "character": "Colossus",
+          "trait": "shield",
+          "effect": "Added 8 to combat roll"
+        },
+        {
+          "round": 5,
+          "character": "Gambit",
+          "trait": "agile",
+          "effect": "Added 9 to defense"
+        },
+        {
+          "round": 1,
+          "character": "Doctor Strange",
+          "trait": "healing",
+          "effect": "Added 10 to damage"
+        },
+        {
+          "round": 2,
+          "character": "Emma Frost",
+          "trait": "genius",
+          "effect": "Added 11 to combat roll"
+        },
+        {
+          "round": 3,
+          "character": "Jean Grey (Phoenix)",
+          "trait": "tactical",
+          "effect": "Added 12 to defense"
+        },
+        {
+          "round": 4,
+          "character": "Hawkeye",
+          "trait": "armor",
+          "effect": "Added 13 to damage"
+        },
+        {
+          "round": 5,
+          "character": "Quicksilver",
+          "trait": "shield",
+          "effect": "Added 14 to combat roll"
+        }
+      ]
+    },
+    {
+      "team_a_name": "Fantastic Four",
+      "team_b_name": "Avengers",
+      "team_a_id": "t004",
+      "team_b_id": "t003",
+      "team_a_wins": 2,
+      "team_b_wins": 3,
+      "winner": "Team B",
+      "winning_team": "Avengers",
+      "convergence_count": 25,
+      "trait_activations": 10,
+      "character_results": [
+        {
+          "character_id": "t004_0",
+          "character_name": "Captain Marvel",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_1",
+          "character_name": "Iron Fist",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_2",
+          "character_name": "Drax the Destroyer",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_3",
+          "character_name": "Morph",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_4",
+          "character_name": "Star Brand",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_5",
+          "character_name": "The Thing",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_6",
+          "character_name": "Doctor Octopus",
+          "team": "A",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_7",
+          "character_name": "Silver Surfer",
+          "team": "A",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_8",
+          "character_name": "Black Panther (T'Challa)",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_9",
+          "character_name": "Ghost Spider (Spider-Gwen)",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_10",
+          "character_name": "Moon Knight",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t004_11",
+          "character_name": "Professor X",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_0",
+          "character_name": "Synch",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_1",
+          "character_name": "Bishop",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_2",
+          "character_name": "Magneto",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_3",
+          "character_name": "Hulk",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_4",
+          "character_name": "Psylocke",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_5",
+          "character_name": "Cloak",
+          "team": "B",
+          "role": "GO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_6",
+          "character_name": "Dagger",
+          "team": "B",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_7",
+          "character_name": "Scarlet Witch",
+          "team": "B",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_8",
+          "character_name": "Carnage",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_9",
+          "character_name": "Ironheart",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_10",
+          "character_name": "Moonstar",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t003_11",
+          "character_name": "Smasher",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        }
+      ],
+      "top_performer": {
+        "name": "Captain Marvel",
+        "team": "A",
+        "stat_type": "damage",
+        "value": 200
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 2,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 3,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 4,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 5,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        }
+      ],
+      "field_leader_substitutions": [],
+      "convergence_logs": [
+        {
+          "square": "e4",
+          "a_roll": 50,
+          "b_roll": 70,
+          "winner": "Captain Marvel",
+          "loser": "Synch",
+          "damage": 10,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 53,
+          "b_roll": 77,
+          "winner": "Iron Fist",
+          "loser": "Bishop",
+          "damage": 11,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 56,
+          "b_roll": 84,
+          "winner": "Drax the Destroyer",
+          "loser": "Magneto",
+          "damage": 12,
+          "reduced_damage": 7,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 59,
+          "b_roll": 91,
+          "winner": "Morph",
+          "loser": "Hulk",
+          "damage": 13,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 62,
+          "b_roll": 98,
+          "winner": "Star Brand",
+          "loser": "Psylocke",
+          "damage": 14,
+          "reduced_damage": 9,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 65,
+          "b_roll": 55,
+          "winner": "The Thing",
+          "loser": "Cloak",
+          "damage": 15,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 68,
+          "b_roll": 62,
+          "winner": "Doctor Octopus",
+          "loser": "Dagger",
+          "damage": 16,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 71,
+          "b_roll": 69,
+          "winner": "Silver Surfer",
+          "loser": "Scarlet Witch",
+          "damage": 17,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 74,
+          "b_roll": 76,
+          "winner": "Black Panther (T'Challa)",
+          "loser": "Carnage",
+          "damage": 18,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 77,
+          "b_roll": 83,
+          "winner": "Ghost Spider (Spider-Gwen)",
+          "loser": "Ironheart",
+          "damage": 19,
+          "reduced_damage": 14,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 80,
+          "b_roll": 90,
+          "winner": "Moon Knight",
+          "loser": "Moonstar",
+          "damage": 20,
+          "reduced_damage": 15,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 83,
+          "b_roll": 97,
+          "winner": "Professor X",
+          "loser": "Smasher",
+          "damage": 21,
+          "reduced_damage": 16,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 86,
+          "b_roll": 54,
+          "winner": "Synch",
+          "loser": "Captain Marvel",
+          "damage": 22,
+          "reduced_damage": 17,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 89,
+          "b_roll": 61,
+          "winner": "Bishop",
+          "loser": "Iron Fist",
+          "damage": 23,
+          "reduced_damage": 18,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 92,
+          "b_roll": 68,
+          "winner": "Magneto",
+          "loser": "Drax the Destroyer",
+          "damage": 24,
+          "reduced_damage": 19,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 95,
+          "b_roll": 75,
+          "winner": "Hulk",
+          "loser": "Morph",
+          "damage": 25,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 98,
+          "b_roll": 82,
+          "winner": "Psylocke",
+          "loser": "Star Brand",
+          "damage": 26,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 51,
+          "b_roll": 89,
+          "winner": "Cloak",
+          "loser": "The Thing",
+          "damage": 27,
+          "reduced_damage": 7,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 54,
+          "b_roll": 96,
+          "winner": "Dagger",
+          "loser": "Doctor Octopus",
+          "damage": 28,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 57,
+          "b_roll": 53,
+          "winner": "Scarlet Witch",
+          "loser": "Silver Surfer",
+          "damage": 29,
+          "reduced_damage": 9,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 60,
+          "b_roll": 60,
+          "winner": "Carnage",
+          "loser": "Black Panther (T'Challa)",
+          "damage": 10,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 63,
+          "b_roll": 67,
+          "winner": "Ironheart",
+          "loser": "Ghost Spider (Spider-Gwen)",
+          "damage": 11,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 66,
+          "b_roll": 74,
+          "winner": "Moonstar",
+          "loser": "Moon Knight",
+          "damage": 12,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 69,
+          "b_roll": 81,
+          "winner": "Smasher",
+          "loser": "Professor X",
+          "damage": 13,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 72,
+          "b_roll": 88,
+          "winner": "Captain Marvel",
+          "loser": "Synch",
+          "damage": 14,
+          "reduced_damage": 14,
+          "outcome": "success"
+        }
+      ],
+      "trait_logs": [
+        {
+          "round": 1,
+          "character": "Captain Marvel",
+          "trait": "genius",
+          "effect": "Added 5 to combat roll"
+        },
+        {
+          "round": 2,
+          "character": "Iron Fist",
+          "trait": "tactical",
+          "effect": "Added 6 to defense"
+        },
+        {
+          "round": 3,
+          "character": "Drax the Destroyer",
+          "trait": "armor",
+          "effect": "Added 7 to damage"
+        },
+        {
+          "round": 4,
+          "character": "Morph",
+          "trait": "shield",
+          "effect": "Added 8 to combat roll"
+        },
+        {
+          "round": 5,
+          "character": "Star Brand",
+          "trait": "agile",
+          "effect": "Added 9 to defense"
+        },
+        {
+          "round": 1,
+          "character": "The Thing",
+          "trait": "healing",
+          "effect": "Added 10 to damage"
+        },
+        {
+          "round": 2,
+          "character": "Doctor Octopus",
+          "trait": "genius",
+          "effect": "Added 11 to combat roll"
+        },
+        {
+          "round": 3,
+          "character": "Silver Surfer",
+          "trait": "tactical",
+          "effect": "Added 12 to defense"
+        },
+        {
+          "round": 4,
+          "character": "Black Panther (T'Challa)",
+          "trait": "armor",
+          "effect": "Added 13 to damage"
+        },
+        {
+          "round": 5,
+          "character": "Ghost Spider (Spider-Gwen)",
+          "trait": "shield",
+          "effect": "Added 14 to combat roll"
+        }
+      ]
+    },
+    {
+      "team_a_name": "Hellfire Club",
+      "team_b_name": "Asgardians",
+      "team_a_id": "t005",
+      "team_b_id": "t006",
+      "team_a_wins": 2,
+      "team_b_wins": 3,
+      "winner": "Team B",
+      "winning_team": "Asgardians",
+      "convergence_count": 25,
+      "trait_activations": 10,
+      "character_results": [
+        {
+          "character_id": "t005_0",
+          "character_name": "Doctor Doom",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_1",
+          "character_name": "Black Bolt",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_2",
+          "character_name": "Gladiator",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_3",
+          "character_name": "Beta Ray Bill",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_4",
+          "character_name": "Exodus",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_5",
+          "character_name": "Darwin",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_6",
+          "character_name": "Proteus",
+          "team": "A",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_7",
+          "character_name": "Sentry",
+          "team": "A",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_8",
+          "character_name": "Guardian",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_9",
+          "character_name": "Jocasta",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_10",
+          "character_name": "Nimrod",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t005_11",
+          "character_name": "Taskmaster",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_0",
+          "character_name": "Thor",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_1",
+          "character_name": "Deadpool",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_2",
+          "character_name": "Wolverine",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_3",
+          "character_name": "She-Hulk",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_4",
+          "character_name": "Iceman",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_5",
+          "character_name": "Rocket Racoon",
+          "team": "B",
+          "role": "GO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_6",
+          "character_name": "Kid Omega",
+          "team": "B",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_7",
+          "character_name": "Wonder Man",
+          "team": "B",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_8",
+          "character_name": "Ant-Man",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_9",
+          "character_name": "Deathlok",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_10",
+          "character_name": "Gamora",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t006_11",
+          "character_name": "Kang the Conqueror",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        }
+      ],
+      "top_performer": {
+        "name": "Doctor Doom",
+        "team": "A",
+        "stat_type": "damage",
+        "value": 200
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 2,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 3,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 4,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 5,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        }
+      ],
+      "field_leader_substitutions": [],
+      "convergence_logs": [
+        {
+          "square": "e4",
+          "a_roll": 50,
+          "b_roll": 70,
+          "winner": "Doctor Doom",
+          "loser": "Thor",
+          "damage": 10,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 53,
+          "b_roll": 77,
+          "winner": "Black Bolt",
+          "loser": "Deadpool",
+          "damage": 11,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 56,
+          "b_roll": 84,
+          "winner": "Gladiator",
+          "loser": "Wolverine",
+          "damage": 12,
+          "reduced_damage": 7,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 59,
+          "b_roll": 91,
+          "winner": "Beta Ray Bill",
+          "loser": "She-Hulk",
+          "damage": 13,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 62,
+          "b_roll": 98,
+          "winner": "Exodus",
+          "loser": "Iceman",
+          "damage": 14,
+          "reduced_damage": 9,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 65,
+          "b_roll": 55,
+          "winner": "Darwin",
+          "loser": "Rocket Racoon",
+          "damage": 15,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 68,
+          "b_roll": 62,
+          "winner": "Proteus",
+          "loser": "Kid Omega",
+          "damage": 16,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 71,
+          "b_roll": 69,
+          "winner": "Sentry",
+          "loser": "Wonder Man",
+          "damage": 17,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 74,
+          "b_roll": 76,
+          "winner": "Guardian",
+          "loser": "Ant-Man",
+          "damage": 18,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 77,
+          "b_roll": 83,
+          "winner": "Jocasta",
+          "loser": "Deathlok",
+          "damage": 19,
+          "reduced_damage": 14,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 80,
+          "b_roll": 90,
+          "winner": "Nimrod",
+          "loser": "Gamora",
+          "damage": 20,
+          "reduced_damage": 15,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 83,
+          "b_roll": 97,
+          "winner": "Taskmaster",
+          "loser": "Kang the Conqueror",
+          "damage": 21,
+          "reduced_damage": 16,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 86,
+          "b_roll": 54,
+          "winner": "Thor",
+          "loser": "Doctor Doom",
+          "damage": 22,
+          "reduced_damage": 17,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 89,
+          "b_roll": 61,
+          "winner": "Deadpool",
+          "loser": "Black Bolt",
+          "damage": 23,
+          "reduced_damage": 18,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 92,
+          "b_roll": 68,
+          "winner": "Wolverine",
+          "loser": "Gladiator",
+          "damage": 24,
+          "reduced_damage": 19,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 95,
+          "b_roll": 75,
+          "winner": "She-Hulk",
+          "loser": "Beta Ray Bill",
+          "damage": 25,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 98,
+          "b_roll": 82,
+          "winner": "Iceman",
+          "loser": "Exodus",
+          "damage": 26,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 51,
+          "b_roll": 89,
+          "winner": "Rocket Racoon",
+          "loser": "Darwin",
+          "damage": 27,
+          "reduced_damage": 7,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 54,
+          "b_roll": 96,
+          "winner": "Kid Omega",
+          "loser": "Proteus",
+          "damage": 28,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 57,
+          "b_roll": 53,
+          "winner": "Wonder Man",
+          "loser": "Sentry",
+          "damage": 29,
+          "reduced_damage": 9,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 60,
+          "b_roll": 60,
+          "winner": "Ant-Man",
+          "loser": "Guardian",
+          "damage": 10,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 63,
+          "b_roll": 67,
+          "winner": "Deathlok",
+          "loser": "Jocasta",
+          "damage": 11,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 66,
+          "b_roll": 74,
+          "winner": "Gamora",
+          "loser": "Nimrod",
+          "damage": 12,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 69,
+          "b_roll": 81,
+          "winner": "Kang the Conqueror",
+          "loser": "Taskmaster",
+          "damage": 13,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 72,
+          "b_roll": 88,
+          "winner": "Doctor Doom",
+          "loser": "Thor",
+          "damage": 14,
+          "reduced_damage": 14,
+          "outcome": "success"
+        }
+      ],
+      "trait_logs": [
+        {
+          "round": 1,
+          "character": "Doctor Doom",
+          "trait": "genius",
+          "effect": "Added 5 to combat roll"
+        },
+        {
+          "round": 2,
+          "character": "Black Bolt",
+          "trait": "tactical",
+          "effect": "Added 6 to defense"
+        },
+        {
+          "round": 3,
+          "character": "Gladiator",
+          "trait": "armor",
+          "effect": "Added 7 to damage"
+        },
+        {
+          "round": 4,
+          "character": "Beta Ray Bill",
+          "trait": "shield",
+          "effect": "Added 8 to combat roll"
+        },
+        {
+          "round": 5,
+          "character": "Exodus",
+          "trait": "agile",
+          "effect": "Added 9 to defense"
+        },
+        {
+          "round": 1,
+          "character": "Darwin",
+          "trait": "healing",
+          "effect": "Added 10 to damage"
+        },
+        {
+          "round": 2,
+          "character": "Proteus",
+          "trait": "genius",
+          "effect": "Added 11 to combat roll"
+        },
+        {
+          "round": 3,
+          "character": "Sentry",
+          "trait": "tactical",
+          "effect": "Added 12 to defense"
+        },
+        {
+          "round": 4,
+          "character": "Guardian",
+          "trait": "armor",
+          "effect": "Added 13 to damage"
+        },
+        {
+          "round": 5,
+          "character": "Jocasta",
+          "trait": "shield",
+          "effect": "Added 14 to combat roll"
+        }
+      ]
+    },
+    {
+      "team_a_name": "Mutant Underground",
+      "team_b_name": "Shield Ops",
+      "team_a_id": "t008",
+      "team_b_id": "t007",
+      "team_a_wins": 2,
+      "team_b_wins": 3,
+      "winner": "Team B",
+      "winning_team": "Shield Ops",
+      "convergence_count": 25,
+      "trait_activations": 10,
+      "character_results": [
+        {
+          "character_id": "t008_0",
+          "character_name": "Sage",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_1",
+          "character_name": "Vision",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_2",
+          "character_name": "Juggernaut",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_3",
+          "character_name": "Ultron",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_4",
+          "character_name": "Daredevil",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_5",
+          "character_name": "Thor (Jane Foster)",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_6",
+          "character_name": "Apocalypse",
+          "team": "A",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_7",
+          "character_name": "Warlock",
+          "team": "A",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_8",
+          "character_name": "Beast",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_9",
+          "character_name": "Cable",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_10",
+          "character_name": "Spider-Woman",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t008_11",
+          "character_name": "War Machine",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_0",
+          "character_name": "Captain America (Rogers)",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_1",
+          "character_name": "Spider-Man (Morales)",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_2",
+          "character_name": "Wolverine / X-23",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_3",
+          "character_name": "The Human Torch",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_4",
+          "character_name": "Mr. Fantastic",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_5",
+          "character_name": "Xorn",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_6",
+          "character_name": "Ghost Rider",
+          "team": "B",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_7",
+          "character_name": "Blue Marvel",
+          "team": "B",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_8",
+          "character_name": "Adam Warlock",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_9",
+          "character_name": "Nebula",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_10",
+          "character_name": "Nick Fury",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t007_11",
+          "character_name": "Nightcrawler",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        }
+      ],
+      "top_performer": {
+        "name": "Sage",
+        "team": "A",
+        "stat_type": "damage",
+        "value": 200
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 2,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 3,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 4,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 5,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        }
+      ],
+      "field_leader_substitutions": [],
+      "convergence_logs": [
+        {
+          "square": "e4",
+          "a_roll": 50,
+          "b_roll": 70,
+          "winner": "Sage",
+          "loser": "Captain America (Rogers)",
+          "damage": 10,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 53,
+          "b_roll": 77,
+          "winner": "Vision",
+          "loser": "Spider-Man (Morales)",
+          "damage": 11,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 56,
+          "b_roll": 84,
+          "winner": "Juggernaut",
+          "loser": "Wolverine / X-23",
+          "damage": 12,
+          "reduced_damage": 7,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 59,
+          "b_roll": 91,
+          "winner": "Ultron",
+          "loser": "The Human Torch",
+          "damage": 13,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 62,
+          "b_roll": 98,
+          "winner": "Daredevil",
+          "loser": "Mr. Fantastic",
+          "damage": 14,
+          "reduced_damage": 9,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 65,
+          "b_roll": 55,
+          "winner": "Thor (Jane Foster)",
+          "loser": "Xorn",
+          "damage": 15,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 68,
+          "b_roll": 62,
+          "winner": "Apocalypse",
+          "loser": "Ghost Rider",
+          "damage": 16,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 71,
+          "b_roll": 69,
+          "winner": "Warlock",
+          "loser": "Blue Marvel",
+          "damage": 17,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 74,
+          "b_roll": 76,
+          "winner": "Beast",
+          "loser": "Adam Warlock",
+          "damage": 18,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 77,
+          "b_roll": 83,
+          "winner": "Cable",
+          "loser": "Nebula",
+          "damage": 19,
+          "reduced_damage": 14,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 80,
+          "b_roll": 90,
+          "winner": "Spider-Woman",
+          "loser": "Nick Fury",
+          "damage": 20,
+          "reduced_damage": 15,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 83,
+          "b_roll": 97,
+          "winner": "War Machine",
+          "loser": "Nightcrawler",
+          "damage": 21,
+          "reduced_damage": 16,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 86,
+          "b_roll": 54,
+          "winner": "Captain America (Rogers)",
+          "loser": "Sage",
+          "damage": 22,
+          "reduced_damage": 17,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 89,
+          "b_roll": 61,
+          "winner": "Spider-Man (Morales)",
+          "loser": "Vision",
+          "damage": 23,
+          "reduced_damage": 18,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 92,
+          "b_roll": 68,
+          "winner": "Wolverine / X-23",
+          "loser": "Juggernaut",
+          "damage": 24,
+          "reduced_damage": 19,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 95,
+          "b_roll": 75,
+          "winner": "The Human Torch",
+          "loser": "Ultron",
+          "damage": 25,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 98,
+          "b_roll": 82,
+          "winner": "Mr. Fantastic",
+          "loser": "Daredevil",
+          "damage": 26,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 51,
+          "b_roll": 89,
+          "winner": "Xorn",
+          "loser": "Thor (Jane Foster)",
+          "damage": 27,
+          "reduced_damage": 7,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 54,
+          "b_roll": 96,
+          "winner": "Ghost Rider",
+          "loser": "Apocalypse",
+          "damage": 28,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 57,
+          "b_roll": 53,
+          "winner": "Blue Marvel",
+          "loser": "Warlock",
+          "damage": 29,
+          "reduced_damage": 9,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 60,
+          "b_roll": 60,
+          "winner": "Adam Warlock",
+          "loser": "Beast",
+          "damage": 10,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 63,
+          "b_roll": 67,
+          "winner": "Nebula",
+          "loser": "Cable",
+          "damage": 11,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 66,
+          "b_roll": 74,
+          "winner": "Nick Fury",
+          "loser": "Spider-Woman",
+          "damage": 12,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 69,
+          "b_roll": 81,
+          "winner": "Nightcrawler",
+          "loser": "War Machine",
+          "damage": 13,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 72,
+          "b_roll": 88,
+          "winner": "Sage",
+          "loser": "Captain America (Rogers)",
+          "damage": 14,
+          "reduced_damage": 14,
+          "outcome": "success"
+        }
+      ],
+      "trait_logs": [
+        {
+          "round": 1,
+          "character": "Sage",
+          "trait": "genius",
+          "effect": "Added 5 to combat roll"
+        },
+        {
+          "round": 2,
+          "character": "Vision",
+          "trait": "tactical",
+          "effect": "Added 6 to defense"
+        },
+        {
+          "round": 3,
+          "character": "Juggernaut",
+          "trait": "armor",
+          "effect": "Added 7 to damage"
+        },
+        {
+          "round": 4,
+          "character": "Ultron",
+          "trait": "shield",
+          "effect": "Added 8 to combat roll"
+        },
+        {
+          "round": 5,
+          "character": "Daredevil",
+          "trait": "agile",
+          "effect": "Added 9 to defense"
+        },
+        {
+          "round": 1,
+          "character": "Thor (Jane Foster)",
+          "trait": "healing",
+          "effect": "Added 10 to damage"
+        },
+        {
+          "round": 2,
+          "character": "Apocalypse",
+          "trait": "genius",
+          "effect": "Added 11 to combat roll"
+        },
+        {
+          "round": 3,
+          "character": "Warlock",
+          "trait": "tactical",
+          "effect": "Added 12 to defense"
+        },
+        {
+          "round": 4,
+          "character": "Beast",
+          "trait": "armor",
+          "effect": "Added 13 to damage"
+        },
+        {
+          "round": 5,
+          "character": "Cable",
+          "trait": "shield",
+          "effect": "Added 14 to combat roll"
+        }
+      ]
+    },
+    {
+      "team_a_name": "X-Force",
+      "team_b_name": "The Illuminati",
+      "team_a_id": "t009",
+      "team_b_id": "t010",
+      "team_a_wins": 2,
+      "team_b_wins": 3,
+      "winner": "Team B",
+      "winning_team": "The Illuminati",
+      "convergence_count": 25,
+      "trait_activations": 10,
+      "character_results": [
+        {
+          "character_id": "t009_0",
+          "character_name": "Cyclops",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_1",
+          "character_name": "Elixir",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_2",
+          "character_name": "Storm",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_3",
+          "character_name": "Valkyrie",
+          "team": "A",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_4",
+          "character_name": "Black Panther (Shuri)",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_5",
+          "character_name": "Marvel Girl",
+          "team": "A",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_6",
+          "character_name": "Blade",
+          "team": "A",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_7",
+          "character_name": "Hyperion",
+          "team": "A",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_8",
+          "character_name": "Black Cat",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_9",
+          "character_name": "Black Widow",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_10",
+          "character_name": "Danger",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t009_11",
+          "character_name": "Namor (The Sub-Mariner)",
+          "team": "A",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_0",
+          "character_name": "Spectrum",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_1",
+          "character_name": "Quake",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_2",
+          "character_name": "Groot",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_3",
+          "character_name": "Sunspot",
+          "team": "B",
+          "role": "RG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_4",
+          "character_name": "Loki",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_5",
+          "character_name": "Mystique",
+          "team": "B",
+          "role": "VG",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_6",
+          "character_name": "Nico Minoru",
+          "team": "B",
+          "role": "PO",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_7",
+          "character_name": "Agatha Harkness",
+          "team": "B",
+          "role": "SV",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDi": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_8",
+          "character_name": "Echo",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_9",
+          "character_name": "Jubilee",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_10",
+          "character_name": "Polaris",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        },
+        {
+          "character_id": "t010_11",
+          "character_name": "Squirrel Girl",
+          "team": "B",
+          "role": "FL",
+          "was_active": true,
+          "is_ko": false,
+          "final_hp": 100,
+          "final_stamina": 100,
+          "rStats": {
+            "rDD": 200,
+            "rDDo": 200,
+            "rOTD": 1
+          }
+        }
+      ],
+      "top_performer": {
+        "name": "Cyclops",
+        "team": "A",
+        "stat_type": "damage",
+        "value": 200
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 2,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 3,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 4,
+          "winner": "Team A",
+          "convergences": 5,
+          "trait_activations": 2
+        },
+        {
+          "round": 5,
+          "winner": "Team B",
+          "convergences": 5,
+          "trait_activations": 2
+        }
+      ],
+      "field_leader_substitutions": [],
+      "convergence_logs": [
+        {
+          "square": "e4",
+          "a_roll": 50,
+          "b_roll": 70,
+          "winner": "Cyclops",
+          "loser": "Spectrum",
+          "damage": 10,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 53,
+          "b_roll": 77,
+          "winner": "Elixir",
+          "loser": "Quake",
+          "damage": 11,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 56,
+          "b_roll": 84,
+          "winner": "Storm",
+          "loser": "Groot",
+          "damage": 12,
+          "reduced_damage": 7,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 59,
+          "b_roll": 91,
+          "winner": "Valkyrie",
+          "loser": "Sunspot",
+          "damage": 13,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 62,
+          "b_roll": 98,
+          "winner": "Black Panther (Shuri)",
+          "loser": "Loki",
+          "damage": 14,
+          "reduced_damage": 9,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 65,
+          "b_roll": 55,
+          "winner": "Marvel Girl",
+          "loser": "Mystique",
+          "damage": 15,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 68,
+          "b_roll": 62,
+          "winner": "Blade",
+          "loser": "Nico Minoru",
+          "damage": 16,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 71,
+          "b_roll": 69,
+          "winner": "Hyperion",
+          "loser": "Agatha Harkness",
+          "damage": 17,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 74,
+          "b_roll": 76,
+          "winner": "Black Cat",
+          "loser": "Echo",
+          "damage": 18,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 77,
+          "b_roll": 83,
+          "winner": "Black Widow",
+          "loser": "Jubilee",
+          "damage": 19,
+          "reduced_damage": 14,
+          "outcome": "success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 80,
+          "b_roll": 90,
+          "winner": "Danger",
+          "loser": "Polaris",
+          "damage": 20,
+          "reduced_damage": 15,
+          "outcome": "success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 83,
+          "b_roll": 97,
+          "winner": "Namor (The Sub-Mariner)",
+          "loser": "Squirrel Girl",
+          "damage": 21,
+          "reduced_damage": 16,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 86,
+          "b_roll": 54,
+          "winner": "Spectrum",
+          "loser": "Cyclops",
+          "damage": 22,
+          "reduced_damage": 17,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 89,
+          "b_roll": 61,
+          "winner": "Quake",
+          "loser": "Elixir",
+          "damage": 23,
+          "reduced_damage": 18,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 92,
+          "b_roll": 68,
+          "winner": "Groot",
+          "loser": "Storm",
+          "damage": 24,
+          "reduced_damage": 19,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 95,
+          "b_roll": 75,
+          "winner": "Sunspot",
+          "loser": "Valkyrie",
+          "damage": 25,
+          "reduced_damage": 5,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 98,
+          "b_roll": 82,
+          "winner": "Loki",
+          "loser": "Black Panther (Shuri)",
+          "damage": 26,
+          "reduced_damage": 6,
+          "outcome": "success"
+        },
+        {
+          "square": "d5",
+          "a_roll": 51,
+          "b_roll": 89,
+          "winner": "Mystique",
+          "loser": "Marvel Girl",
+          "damage": 27,
+          "reduced_damage": 7,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "c6",
+          "a_roll": 54,
+          "b_roll": 96,
+          "winner": "Nico Minoru",
+          "loser": "Blade",
+          "damage": 28,
+          "reduced_damage": 8,
+          "outcome": "critical_success"
+        },
+        {
+          "square": "g3",
+          "a_roll": 57,
+          "b_roll": 53,
+          "winner": "Agatha Harkness",
+          "loser": "Hyperion",
+          "damage": 29,
+          "reduced_damage": 9,
+          "outcome": "success"
+        },
+        {
+          "square": "f5",
+          "a_roll": 60,
+          "b_roll": 60,
+          "winner": "Echo",
+          "loser": "Black Cat",
+          "damage": 10,
+          "reduced_damage": 10,
+          "outcome": "success"
+        },
+        {
+          "square": "h4",
+          "a_roll": 63,
+          "b_roll": 67,
+          "winner": "Jubilee",
+          "loser": "Black Widow",
+          "damage": 11,
+          "reduced_damage": 11,
+          "outcome": "success"
+        },
+        {
+          "square": "a2",
+          "a_roll": 66,
+          "b_roll": 74,
+          "winner": "Polaris",
+          "loser": "Danger",
+          "damage": 12,
+          "reduced_damage": 12,
+          "outcome": "success"
+        },
+        {
+          "square": "b7",
+          "a_roll": 69,
+          "b_roll": 81,
+          "winner": "Squirrel Girl",
+          "loser": "Namor (The Sub-Mariner)",
+          "damage": 13,
+          "reduced_damage": 13,
+          "outcome": "success"
+        },
+        {
+          "square": "e4",
+          "a_roll": 72,
+          "b_roll": 88,
+          "winner": "Cyclops",
+          "loser": "Spectrum",
+          "damage": 14,
+          "reduced_damage": 14,
+          "outcome": "success"
+        }
+      ],
+      "trait_logs": [
+        {
+          "round": 1,
+          "character": "Cyclops",
+          "trait": "genius",
+          "effect": "Added 5 to combat roll"
+        },
+        {
+          "round": 2,
+          "character": "Elixir",
+          "trait": "tactical",
+          "effect": "Added 6 to defense"
+        },
+        {
+          "round": 3,
+          "character": "Storm",
+          "trait": "armor",
+          "effect": "Added 7 to damage"
+        },
+        {
+          "round": 4,
+          "character": "Valkyrie",
+          "trait": "shield",
+          "effect": "Added 8 to combat roll"
+        },
+        {
+          "round": 5,
+          "character": "Black Panther (Shuri)",
+          "trait": "agile",
+          "effect": "Added 9 to defense"
+        },
+        {
+          "round": 1,
+          "character": "Marvel Girl",
+          "trait": "healing",
+          "effect": "Added 10 to damage"
+        },
+        {
+          "round": 2,
+          "character": "Blade",
+          "trait": "genius",
+          "effect": "Added 11 to combat roll"
+        },
+        {
+          "round": 3,
+          "character": "Hyperion",
+          "trait": "tactical",
+          "effect": "Added 12 to defense"
+        },
+        {
+          "round": 4,
+          "character": "Black Cat",
+          "trait": "armor",
+          "effect": "Added 13 to damage"
+        },
+        {
+          "round": 5,
+          "character": "Black Widow",
+          "trait": "shield",
+          "effect": "Added 14 to combat roll"
+        }
+      ]
+    }
+  ]
+}

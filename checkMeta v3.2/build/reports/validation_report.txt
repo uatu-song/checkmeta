@@ -1,0 +1,210 @@
+===== Validation Report =====
+
+Critical: Syntax or Indentation Errors:
+  None found.
+
+Warning: Duplicate Classes:
+
+Warning: Duplicate Functions:
+  [!] Function '__init__' found in: ['systems.advanced_feature_manager', 'systems.buffered_damage', 'systems.convergence_balancer', 'systems.enhanced_field_leader', 'systems.enhanced_trait_system', 'systems.initiative_randomizer', 'systems.loss_conditions', 'systems.momentum_system', 'systems.morale_system', 'systems.stockfish_integration', 'systems.synergy_tracker', 'systems.traits', 'systems.xp_progression_system', 'utils.parity_tester', 'utils.pgn_tracker', 'utils.stat_tracker']
+  [!] Function 'apply_trait_effect' found in: ['systems.enhanced_trait_system', 'systems.traits']
+  [!] Function 'activate' found in: ['systems.stockfish_integration', 'systems.synergy_tracker']
+  [!] Function 'map_position_to_role' found in: ['utils.helpers', 'utils.loaders']
+  [!] Function 'get_division_from_role' found in: ['utils.helpers', 'utils.loaders']
+  [!] Function 'normalize_team_id' found in: ['utils.match_helpers', 'utils.team_helpers']
+
+Warning: Duplicate Constants:
+
+Critical: Broken Imports:
+  [!] Import 'Union' not found
+  [!] Import 'Optional' not found
+  [!] Import 'Tuple' not found
+  [!] Import 'Dict' not found
+  [!] Import 'defaultdict' not found
+  [!] Import 'Generator' not found
+  [!] Import 'Any' not found
+  [!] Import 'get_config' not found
+  [!] Import 'EnhancedTraitSystem' not found
+  [!] Import 'XPProgressionSystem' not found
+  [!] Import 'List' not found
+  [!] Import 'MoraleSystem' not found
+  [!] Import 'StockfishIntegration' not found
+
+Critical: Missing Called Functions or Argument Mismatches:
+  [!] Function call to 'sum' not defined anywhere
+  [!] Function call to 'range' not defined anywhere
+  [!] Function call to 'abs' not defined anywhere
+  [!] Function call to 'list' not defined anywhere
+  [!] Function call to 'min' not defined anywhere
+  [!] Function call to 'ValueError' not defined anywhere
+  [!] Function call to 'dict' not defined anywhere
+  [!] Function call to 'open' not defined anywhere
+  [!] Function call to 'next' not defined anywhere
+  [!] Function call to 'zip' not defined anywhere
+  [!] Function call to 'defaultdict' not defined anywhere
+  [!] Function call to 'FileNotFoundError' not defined anywhere
+  [!] Function call to 'max' not defined anywhere
+  [!] Function call to 'print' not defined anywhere
+  [!] Function call to 'get_config' not defined anywhere
+  [!] Function call to 'int' not defined anywhere
+  [!] Function call to 'EnhancedTraitSystem' not defined anywhere
+  [!] Function call to 'enumerate' not defined anywhere
+  [!] Function call to 'set' not defined anywhere
+  [!] Function call to 'isinstance' not defined anywhere
+  [!] Function call to 'XPProgressionSystem' not defined anywhere
+  [!] Function call to 'any' not defined anywhere
+  [!] Function call to 'str' not defined anywhere
+  [!] Function call to 'sorted' not defined anywhere
+  [!] Function call to 'MoraleSystem' not defined anywhere
+  [!] Function call to 'len' not defined anywhere
+  [!] Function call to 'divmod' not defined anywhere
+  [!] Function call to 'float' not defined anywhere
+  [!] Function call to 'StockfishIntegration' not defined anywhere
+  [!] Function 'parse_match_date' called with 1 args but defined with 2 args
+  [!] Function 'generate_random_character' called with 2 args but defined with 3 args
+  [!] Function 'extract_openings_from_pgn' called with 1 args but defined with 2 args
+  [!] Function 'generate_health_bar' called with 1 args but defined with 2 args
+  [!] Function 'generate_health_bar' called with 1 args but defined with 2 args
+
+Critical: Missing Attribute Calls:
+  [!] Attribute call to 'unlink' not defined anywhere
+  [!] Attribute call to 'random' not defined anywhere
+  [!] Attribute call to 'title' not defined anywhere
+  [!] Attribute call to 'add_variation' not defined anywhere
+  [!] Attribute call to 'invert_yaxis' not defined anywhere
+  [!] Attribute call to 'items' not defined anywhere
+  [!] Attribute call to 'dirname' not defined anywhere
+  [!] Attribute call to 'writeheader' not defined anywhere
+  [!] Attribute call to 'play' not defined anywhere
+  [!] Attribute call to 'figtext' not defined anywhere
+  [!] Attribute call to 'mainline_moves' not defined anywhere
+  [!] Attribute call to 'piece_at' not defined anywhere
+  [!] Attribute call to 'NamedTemporaryFile' not defined anywhere
+  [!] Attribute call to 'show' not defined anywhere
+  [!] Attribute call to 'sample' not defined anywhere
+  [!] Attribute call to 'getvalue' not defined anywhere
+  [!] Attribute call to 'capitalize' not defined anywhere
+  [!] Attribute call to 'iterrows' not defined anywhere
+  [!] Attribute call to 'startswith' not defined anywhere
+  [!] Attribute call to 'ylabel' not defined anywhere
+  [!] Attribute call to 'subplots' not defined anywhere
+  [!] Attribute call to 'basename' not defined anywhere
+  [!] Attribute call to 'isna' not defined anywhere
+  [!] Attribute call to 'read_excel' not defined anywhere
+  [!] Attribute call to 'clear' not defined anywhere
+  [!] Attribute call to 'popen_uci' not defined anywhere
+  [!] Attribute call to 'endswith' not defined anywhere
+  [!] Attribute call to 'isalnum' not defined anywhere
+  [!] Attribute call to 'print_exc' not defined anywhere
+  [!] Attribute call to 'pie' not defined anywhere
+  [!] Attribute call to 'pop' not defined anywhere
+  [!] Attribute call to 'is_capture' not defined anywhere
+  [!] Attribute call to 'DictWriter' not defined anywhere
+  [!] Attribute call to 'randint' not defined anywhere
+  [!] Attribute call to 'copy' not defined anywhere
+  [!] Attribute call to 'DictReader' not defined anywhere
+  [!] Attribute call to 'xticks' not defined anywhere
+  [!] Attribute call to 'barh' not defined anywhere
+  [!] Attribute call to 'set_yticks' not defined anywhere
+  [!] Attribute call to 'strftime' not defined anywhere
+  [!] Attribute call to 'analyse' not defined anywhere
+  [!] Attribute call to 'upper' not defined anywhere
+  [!] Attribute call to 'san' not defined anywhere
+  [!] Attribute call to 'simulate_match' not defined anywhere
+  [!] Attribute call to 'strptime' not defined anywhere
+  [!] Attribute call to 'is_check' not defined anywhere
+  [!] Attribute call to 'Game' not defined anywhere
+  [!] Attribute call to 'axhline' not defined anywhere
+  [!] Attribute call to 'dump' not defined anywhere
+  [!] Attribute call to 'parse' not defined anywhere
+  [!] Attribute call to 'quit' not defined anywhere
+  [!] Attribute call to 'ExcelFile' not defined anywhere
+  [!] Attribute call to 'sort' not defined anywhere
+  [!] Attribute call to 'arange' not defined anywhere
+  [!] Attribute call to 'choice' not defined anywhere
+  [!] Attribute call to 'figure' not defined anywhere
+  [!] Attribute call to 'read_csv' not defined anywhere
+  [!] Attribute call to 'Limit' not defined anywhere
+  [!] Attribute call to 'read_game' not defined anywhere
+  [!] Attribute call to 'timestamp' not defined anywhere
+  [!] Attribute call to 'isdigit' not defined anywhere
+  [!] Attribute call to 'abspath' not defined anywhere
+  [!] Attribute call to 'axvline' not defined anywhere
+  [!] Attribute call to 'get' not defined anywhere
+  [!] Attribute call to 'count' not defined anywhere
+  [!] Attribute call to 'Board' not defined anywhere
+  [!] Attribute call to 'shuffle' not defined anywhere
+  [!] Attribute call to 'get_timestamp' not defined anywhere
+  [!] Attribute call to 'text' not defined anywhere
+  [!] Attribute call to 'now' not defined anywhere
+  [!] Attribute call to 'get_height' not defined anywhere
+  [!] Attribute call to 'append' not defined anywhere
+  [!] Attribute call to 'tight_layout' not defined anywhere
+  [!] Attribute call to 'read' not defined anywhere
+  [!] Attribute call to 'listdir' not defined anywhere
+  [!] Attribute call to 'makedirs' not defined anywhere
+  [!] Attribute call to 'set_title' not defined anywhere
+  [!] Attribute call to 'legend' not defined anywhere
+  [!] Attribute call to 'values' not defined anywhere
+  [!] Attribute call to 'copy2' not defined anywhere
+  [!] Attribute call to 'move' not defined anywhere
+  [!] Attribute call to 'timedelta' not defined anywhere
+  [!] Attribute call to 'axis' not defined anywhere
+  [!] Attribute call to 'isupper' not defined anywhere
+  [!] Attribute call to 'tolist' not defined anywhere
+  [!] Attribute call to 'update' not defined anywhere
+  [!] Attribute call to 'bar' not defined anywhere
+  [!] Attribute call to 'replace' not defined anywhere
+  [!] Attribute call to 'savefig' not defined anywhere
+  [!] Attribute call to 'walk' not defined anywhere
+  [!] Attribute call to 'exists' not defined anywhere
+  [!] Attribute call to 'split' not defined anywhere
+  [!] Attribute call to 'set_xlabel' not defined anywhere
+  [!] Attribute call to 'extend' not defined anywhere
+  [!] Attribute call to 'join' not defined anywhere
+  [!] Attribute call to 'time' not defined anywhere
+  [!] Attribute call to 'mainline' not defined anywhere
+  [!] Attribute call to 'set_yticklabels' not defined anywhere
+  [!] Attribute call to 'StringIO' not defined anywhere
+  [!] Attribute call to 'strip' not defined anywhere
+  [!] Attribute call to 'keys' not defined anywhere
+  [!] Attribute call to 'lower' not defined anywhere
+  [!] Attribute call to 'relpath' not defined anywhere
+  [!] Attribute call to 'get_x' not defined anywhere
+  [!] Attribute call to 'get_width' not defined anywhere
+  [!] Attribute call to 'find' not defined anywhere
+  [!] Attribute call to 'FileExporter' not defined anywhere
+  [!] Attribute call to 'pieces' not defined anywhere
+  [!] Attribute call to 'writerow' not defined anywhere
+  [!] Attribute call to 'write' not defined anywhere
+  [!] Attribute call to 'accept' not defined anywhere
+  [!] Attribute call to 'symbol' not defined anywhere
+  [!] Attribute call to 'load' not defined anywhere
+  [!] Attribute call to 'push' not defined anywhere
+
+Critical: Circular Imports:
+  None found.
+
+===== Policy Validation =====
+
+Config Usage Warnings:
+  [!] Hardcoded path or filetype found in meta_simulator
+  [!] Hardcoded path or filetype found in systems.enhanced_trait_system
+  [!] Hardcoded path or filetype found in systems.stockfish_integration
+  [!] Hardcoded path or filetype found in systems.traits
+  [!] Hardcoded path or filetype found in utils.file_helpers
+  [!] Hardcoded path or filetype found in utils.helpers
+  [!] Hardcoded path or filetype found in utils.loaders
+  [!] Hardcoded path or filetype found in utils.parity_tester
+  [!] Hardcoded path or filetype found in utils.pgn_tracker
+  [!] Hardcoded path or filetype found in utils.pgn_visualizer
+  [!] Hardcoded path or filetype found in utils.stat_tracker
+  [!] Hardcoded path or filetype found in utils.visualizer
+Synergy Stub Warnings:
+  [!] SynergyTracker referenced without fallback check in systems.synergy_tracker
+Error Handling Warnings:
+  [!] Bare except block found in utils.file_helpers
+  [!] Bare except block found in utils.loaders
+  [!] Bare except block found in utils.pgn_tracker
+
+===== End of Report =====

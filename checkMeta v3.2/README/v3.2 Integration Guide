@@ -1,0 +1,84 @@
+# META Fantasy League Simulator v3.2 Changelog
+
+## Overview
+META Fantasy League Simulator v3.2 focuses on core engine stability and maintainability improvements. This version introduces centralized configuration management, improves error handling, and adds infrastructure for future features while fixing several key issues from v3.1.
+
+## Key Improvements
+
+### 1. Centralized Configuration System
+- **New `config.py` module**: All simulation parameters, file paths, and constants are now centralized
+- **Runtime configuration loading**: Support for JSON configuration files
+- **Flexible overrides**: Easy parameter adjustment without code changes
+- **Directory management**: Automatic creation of required directories
+
+### 2. Enhanced Date & Time Handling
+- **Standardized timestamps**: Consistent formatting across all outputs
+- **Flexible date handling**: Support for different day/week/date formats
+- **Match scheduling by date**: Day-based matchups with proper date tracking
+
+### 3. Improved Batch Processing
+- **Configurable batch size**: Adjust simulation granularity
+- **Better progress tracking**: Enhanced reporting during batch processing
+- **Memory optimization**: Improved resource usage for large simulations
+
+### 4. Error Resilience
+- **Robust file operations**: Recovery mechanisms for file operations
+- **Backup systems**: Automatic backup of critical outputs
+- **Exception handling**: Better error messages and recovery paths
+
+### 5. Team Identification Enhancements
+- **Name-based references**: Team names instead of IDs where appropriate
+- **Case-insensitive matching**: Improved team ID recognition
+- **Normalized text**: Consistent naming throughout reports
+
+### 6. Structural Improvements
+- **Fixed indentation issues**: Corrected code structure in meta_simulator.py
+- **Code organization**: Better separation of concerns
+- **Module integration**: Improved system component architecture
+
+### 7. Infrastructure for Future Features
+- **Synergy system stub**: Infrastructure for the upcoming team synergy system in v4.0
+- **Integration hooks**: Clean pathways for future enhancements
+- **Advanced feature toggling**: Improved feature enablement mechanism
+
+## Bug Fixes
+- Fixed indentation error in `__init__` method
+- Corrected docstring placement
+- Resolved file path inconsistencies
+- Fixed team ID normalization issues
+- Improved error handling in file operations
+- Corrected timestamp formatting irregularities
+
+## Technical Details
+
+### New Files
+- `config.py`: Central configuration management
+- `systems/synergy_tracker.py`: Stub for future synergy system
+
+### Modified Files
+- `meta_simulator.py`: Fixed indentation, integrated configuration
+- Various utility modules: Improved compatibility with config system
+
+### Configuration Categories
+- **Simulation parameters**: Core simulation settings (max moves, damage scaling, etc.)
+- **File paths**: Directory structure and resource locations
+- **Date settings**: Timestamp formats and date handling
+- **Team data**: Team mappings and matchday configuration
+- **Chess parameters**: Role-based openings and move selection
+- **Role mappings**: Position to role and division mappings
+- **Logging**: Log level, format, and output locations
+
+## Upgrade Instructions
+1. Add the new `config.py` file to your project root
+2. Add the `systems/synergy_tracker.py` stub file to your systems directory
+3. Apply the patch to `meta_simulator.py` to fix indentation and integrate configuration
+4. Verify directory structure matches the configuration or adjust paths as needed
+5. No database schema changes required
+
+## Looking Ahead
+This release lays the groundwork for v4.0, which will introduce full team synergy mechanics, enhanced narrative generation, and season management. The stub synergy tracker in this release provides a clean integration path for these upcoming features.
+
+---
+
+*META Fantasy League Simulator is developed and maintained by the META Zero Team.*
+*Release Date: April 26, 2025*
