@@ -1,0 +1,211 @@
+# Stamina Tracker Integration Guide
+
+This guide explains how to integrate the Stamina Tracker into the META Fantasy League Simulator. The system provides dynamic stamina monitoring and reporting for manager dashboards, allowing team managers to track player stamina levels and make informed decisions.
+
+## Overview
+
+The Stamina Tracker consists of two main components:
+
+1. **Stamina Tracker** (`stamina_tracker.py`) - Core system for monitoring and reporting stamina levels
+2. **Stamina Integration** (`stamina_integration.py`) - Module that connects the stamina tracker to the simulator
+
+## Features
+
+- **Real-Time Stamina Monitoring** - Track stamina levels for all characters
+- **Daily Recovery Simulation** - Model realistic stamina regeneration based on character attributes
+- **Status Classification** - Categorize stamina levels (critical, low, moderate, high, full)
+- **Trend Tracking** - Monitor stamina trends over time (increasing, decreasing, stable)
+- **Dashboard Generation** - Create text and JSON dashboards for manager interfaces
+- **Persistence** - Store stamina history and snapshots between sessions
+
+## Installation
+
+1. Copy the following files to your project directory:
+   - `stamina_tracker.py`
+   - `stamina_integration.py`
+
+2. Ensure the persistence directory exists:
+   ```
+   mkdir -p data/persistence
+   ```
+
+## Integration Steps
+
+### Option 1: Easy Integration (Recommended)
+
+Add the following code to your main script:
+
+```python
+from stamina_integration import integrate_stamina_tracker
+
+# Initialize your simulator
+simulator = MetaLeagueSimulator()
+
+# Integrate stamina tracker
+integrate_stamina_tracker(simulator)
+
+# Run simulation
+simulator.run_matchday(day_number=1)
+```
+
+### Option 2: Manual Integration
+
+For more control over the integration process:
+
+```python
+from stamina_integration import StaminaIntegration
+
+# Initialize your simulator
+simulator = MetaLeagueSimulator()
+
+# Initialize stamina integration
+stamina_integration = StaminaIntegration(simulator)
+
+# Activate stamina tracker
+success = stamina_integration.activate()
+
+# Run simulation
+simulator.run_matchday(day_number=1)
+```
+
+## How Stamina Tracking Works
+
+### Stamina Status Levels
+
+Stamina levels are categorized into five status levels:
+
+| Status | Range | Description |
+|--------|-------|-------------|
+| Critical | 0-20% | Severely depleted stamina |
+| Low | 21-40% | Significantly depleted stamina |
+| Moderate | 41-70% | Partially depleted stamina |
+| High | 71-90% | Good stamina levels |
+| Full | 91-100% | Optimal stamina levels |
+
+### Daily Recovery
+
+Characters recover stamina each day based on several factors:
+
+1. **Base Recovery Rate** - 15% per day
+2. **Willpower (WIL) Bonus** - +2% per point above 5
+3. **Injury Reduction** - 50% recovery if injured
+4. **Activity Modifier** - 80% recovery if active, 120% if on bench
+
+### Dashboard Generation
+
+The system automatically generates two types of dashboards:
+
+1. **Text Dashboard** (.txt) - Simple text format for console/terminal displays
+2. **JSON Dashboard** (.json) - Structured data for web interfaces and APIs
+
+Both are generated after each match day and updated with daily recovery.
+
+## Using the Stamina Tracker
+
+### Automatic Usage
+
+The stamina tracker works automatically when integrated:
+
+- Stamina levels are updated after each match
+- Daily recovery is simulated before each match day
+- Dashboards are generated automatically
+
+### Manual Commands
+
+You can also manually interact with the stamina tracker:
+
+```python
+# Update stamina for a team
+simulator.update_team_stamina("t001")
+
+# Simulate daily recovery
+simulator.simulate_team_recovery("t001")
+
+# Generate dashboard files
+simulator.generate_stamina_dashboard("t001", format="txt")  # or "json"
+```
+
+## Dashboard Files
+
+The system generates two dashboard files for each team:
+
+### Text Dashboard Example
+
+```
+TEAM t001 STAMINA DASHBOARD
+Last Updated: 2023-11-22
+
+TEAM SUMMARY:
+Average Stamina: 67.5%
+Critical: 1
+Low: 2
+Moderate: 3
+High: 1
+Full: 1
+
+PLAYER STAMINA:
+Charlie: 15.0% (CRITICAL) ↓
+Alice: 35.0% (LOW) →
+Bob: 40.0% (LOW) ↑
+Diana: 65.0% (MODERATE) →
+Eve: 85.0% (HIGH) ↑
+Frank: 100.0% (FULL) →
+```
+
+### JSON Dashboard Format
+
+```json
+{
+  "team_id": "t001",
+  "timestamp": "2023-11-22T14:30:45.123456",
+  "summary": {
+    "critical": 1,
+    "low": 2,
+    "moderate": 3,
+    "high": 1,
+    "full": 1,
+    "team_average": 67.5
+  },
+  "players": [
+    {
+      "id": "t001_3",
+      "name": "Charlie",
+      "stamina": 15.0,
+      "status": "critical",
+      "trend": "down"
+    },
+    {
+      "id": "t001_1",
+      "name": "Alice",
+      "stamina": 35.0,
+      "status": "low",
+      "trend": "stable"
+    },
+    ...
+  ]
+}
+```
+
+## Integration with Other Systems
+
+The Stamina Tracker is designed to work alongside other systems:
+
+- **Injury System** - Injured characters have reduced stamina recovery
+- **Healing System** - Healing actions consume stamina from healers
+- **XP System** - Characters gain XP through activities that deplete stamina
+
+## Customization
+
+You can customize the stamina tracker by modifying the following parameters in `stamina_tracker.py`:
+
+- `stamina_thresholds` - Status level thresholds
+- `base_recovery_rate` - Daily recovery percentage
+- Various modifiers for WIL, injuries, and activity levels
+
+## Troubleshooting
+
+1. **Missing dashboard files**: Ensure the persistence directory exists and is writable
+2. **Incorrect stamina values**: Check that stamina is being correctly updated in match simulations
+3. **Integration errors**: Check the logs for specific error messages
+
+For any issues, check the logs for detailed error messages.

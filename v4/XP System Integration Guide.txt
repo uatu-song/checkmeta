@@ -1,0 +1,175 @@
+# XP System Integration Guide
+
+This guide explains how to integrate the XP Progression System into the META Fantasy League Simulator. The system tracks character growth over time by awarding XP based on performance and allowing characters to level up and gain improved attributes.
+
+## Overview
+
+The XP Progression System consists of three main components:
+
+1. **XP Progression System** (`xp_progression_system.py`) - Core system for XP calculation, leveling, and attribute growth
+2. **XP Integration** (`xp_integration.py`) - Module that connects the XP system to the simulator
+3. **XP System Demo** (`xp_system_demo.py`) - Standalone script to demonstrate and test the XP system
+
+## Features
+
+- **Performance-Based XP** - Characters earn XP based on match outcomes, damage dealt, convergence wins, and more
+- **Role-Based Growth** - Different roles (FL, VG, RG, etc.) specialize in different attributes
+- **Level Progression** - Characters gain levels as they accumulate XP, with increasing thresholds
+- **Attribute Growth** - Leveling up grants chance-based attribute improvements
+- **Persistence** - Character progression is saved between matches/sessions
+- **Detailed Reports** - Provides summaries and narrative elements about character growth
+
+## Installation
+
+1. Copy the following files to your project directory:
+   - `xp_progression_system.py`
+   - `xp_integration.py`
+   - `xp_system_demo.py` (optional, for testing)
+
+2. Create a persistence directory:
+   ```
+   mkdir -p data/persistence
+   ```
+
+## Integration Steps
+
+### Option 1: Easy Integration (Recommended)
+
+Add the following code to your main script:
+
+```python
+from xp_integration import integrate_xp_progression
+
+# Initialize your simulator
+simulator = MetaLeagueSimulator()
+
+# Integrate XP progression system
+integrate_xp_progression(simulator)
+
+# Run simulation
+simulator.run_matchday(day_number=1)
+```
+
+### Option 2: Manual Integration
+
+For more control over the integration process:
+
+```python
+from xp_integration import XPIntegration
+
+# Initialize your simulator
+simulator = MetaLeagueSimulator()
+
+# Initialize XP integration
+xp_integration = XPIntegration(simulator)
+
+# Activate XP system
+success = xp_integration.activate()
+
+# Enhance visualization (optional)
+if success:
+    xp_integration.enhance_visualization()
+
+# Run simulation
+simulator.run_matchday(day_number=1)
+```
+
+## Testing the System
+
+You can test the XP system independently using the demo script:
+
+```bash
+python xp_system_demo.py
+```
+
+This will demonstrate:
+- XP calculation based on match performance
+- Leveling up and attribute growth
+- Character progression reporting
+- Persistence and loading
+
+## XP Calculation
+
+Characters earn XP from various sources:
+
+| Source | XP Value |
+|--------|----------|
+| Match win | 30 XP |
+| Match draw | 15 XP |
+| Match loss | 10 XP |
+| Convergence win | 5 XP per win |
+| Knockout | 15 XP per KO |
+| KO recovery | 10 XP per recovery |
+| Damage dealt | 0.1 XP per point |
+| Healing provided | 0.2 XP per point |
+| Field Leader bonus | 20 XP |
+
+## Level Thresholds
+
+Characters progress through levels as they accumulate XP:
+
+| Level | XP Required |
+|-------|-------------|
+| 1 | 0 |
+| 2 | 100 |
+| 3 | 250 |
+| 4 | 450 |
+| 5 | 700 |
+| 6 | 1000 |
+| 7 | 1350 |
+| 8 | 1750 |
+| 9 | 2200 |
+| 10 | 2700 |
+
+## Growth Rates
+
+Each role has different growth rates for attributes:
+
+| Role | Primary Growth | Secondary Growth |
+|------|----------------|------------------|
+| Field Leader (FL) | Leadership (50%) | Durability (30%) |
+| Vanguard (VG) | Speed (50%) | Strength (30%) |
+| Enforcer (EN) | Strength (50%) | Durability (40%) |
+| Ranger (RG) | Speed (40%) | Focus/Speed (30%) |
+| Ghost Operative (GO) | Speed (50%) | Willpower (30%) |
+| Psi Operative (PO) | Willpower (50%) | Operant Potential (40%) |
+| Sovereign (SV) | Operant Potential (60%) | Arcane Mastery (40%) |
+
+The percentage indicates the chance of gaining a point in that attribute when leveling up.
+
+## Example Integration Results
+
+With the XP system integrated, match reports will include XP progression:
+
+```
+=== MATCH SUMMARY ===
+Team 001 vs Team 002
+
+RESULT: Team 001 3 - 1 Team 002
+WINNER: Team 001
+
+XP PROGRESSION:
+- Alice: +71 XP (Level 1)
+- Bob: +27 XP (Level 1)
+- Charlie: +32 XP (Level 1)
+- Diana: +65 XP (Level 1)
+```
+
+Character progression is tracked between matches, allowing for long-term growth stories.
+
+## Customization
+
+You can customize the XP system by modifying the following parameters in `xp_progression_system.py`:
+
+- `level_thresholds` - XP requirements for each level
+- `growth_rates` - Attribute growth chances by role
+- `xp_rewards` - XP values for different achievements
+
+## Troubleshooting
+
+1. **Missing files error**: Ensure all required files are in the correct locations
+2. **Import errors**: Check that the files are in the Python path
+3. **Persistence errors**: Make sure the data/persistence directory exists and is writable
+4. **Integration errors**: Check the logs for specific error messages
+
+For any issues, check the logs for detailed error messages.

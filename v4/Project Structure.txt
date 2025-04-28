@@ -1,0 +1,40 @@
+/meta_league_simulator/
+    /core/
+        __init__.py
+        system_base.py        # Base class for all systems
+        system_registry.py    # System registry pattern
+        event_system.py       # Event dispatch system
+        config_manager.py     # Configuration management
+        gatekeeper.py         # Enhanced validation system
+        backup_manager.py     # Snapshot and versioning
+    /systems/
+        __init__.py
+        data_loader.py        # Team and lineup loading
+        trait_system.py       # Character traits
+        chess_system.py       # Chess mechanics
+        combat_system.py      # Combat calculations
+        convergence_system.py # Chess board convergences
+        pgn_tracker.py        # PGN recording
+        stat_tracker.py       # Statistics tracking
+        match_visualizer.py   # Match reporting
+        # Optional systems
+        xp_system.py          # Experience points system
+        synergy_system.py     # Team synergies
+        injury_system.py      # Injury mechanics 
+        morale_system.py      # Character morale
+        stamina_system.py     # Stamina tracking
+    /data/
+        teams/                # Team definitions
+        lineups/              # Lineup data
+        traits/               # Trait catalog
+        divisions/            # Division definitions
+    /config/
+        default_config.json   # Default configuration
+    /results/
+        pgn/                  # PGN output
+        reports/              # Match reports
+        stats/                # Statistics output
+    /logs/                    # Log files
+    /backups/                 # System state snapshots
+    simulator.py              # Main entry point
+    README.md                 # Documentation
