@@ -1,0 +1,190 @@
+Injury System Integration Guide# Injury System Integration Guide
+
+This guide explains how to integrate the Injury System into the META Fantasy League Simulator. The system adds realistic injury dynamics, recovery timelines, and an Injured Reserve (IR) list to enhance gameplay depth and strategic decision-making.
+
+## Overview
+
+The Injury System consists of three main components:
+
+1. **Injury System** (`injury_system.py`) - Core system for injury mechanics, recovery tracking, and IR management
+2. **Injury Integration** (`injury_integration.py`) - Module that connects the injury system to the simulator
+3. **Injury System Demo** (`injury_system_demo.py`) - Standalone script to demonstrate and test the injury system
+
+## Features
+
+- **Realistic Injury Mechanics** - Characters can sustain injuries during matches
+- **Attribute-Based Risk** - Durability, Resilience, and Stability attributes affect injury dynamics
+- **Injured Reserve (IR) List** - Characters on IR are automatically excluded from active lineups
+- **Varied Severity Levels** - Minor, Moderate, Major, and Severe injuries with appropriate recovery times
+- **Attribute Penalties** - Injuries affect specific attributes during recovery
+- **Body Part System** - Different injury locations affect different attributes
+- **Persistence** - IR list and injury history are saved between matches/sessions
+
+## Installation
+
+1. Copy the following files to your project directory:
+   - `injury_system.py`
+   - `injury_integration.py`
+   - `injury_system_demo.py` (optional, for testing)
+
+2. Create a persistence directory:
+   ```
+   mkdir -p data/persistence
+   ```
+
+## Integration Steps
+
+### Option 1: Easy Integration (Recommended)
+
+Add the following code to your main script:
+
+```python
+from injury_integration import integrate_injury_system
+
+# Initialize your simulator
+simulator = MetaLeagueSimulator()
+
+# Integrate injury system
+integrate_injury_system(simulator)
+
+# Run simulation
+simulator.run_matchday(day_number=1)
+```
+
+### Option 2: Manual Integration
+
+For more control over the integration process:
+
+```python
+from injury_integration import InjuryIntegration
+
+# Initialize your simulator
+simulator = MetaLeagueSimulator()
+
+# Initialize injury integration
+injury_integration = InjuryIntegration(simulator)
+
+# Activate injury system
+success = injury_integration.activate()
+
+# Enhance visualization (optional)
+if success:
+    injury_integration.enhance_visualization()
+
+# Run simulation
+simulator.run_matchday(day_number=1)
+```
+
+## Testing the System
+
+You can test the injury system independently using the demo script:
+
+```bash
+python injury_system_demo.py
+```
+
+This will demonstrate:
+- Injury detection based on character attributes
+- Recovery mechanics and timelines
+- Attribute penalties during recovery
+- IR list persistence
+
+## How Attributes Affect Injuries
+
+The system uses three key attributes to model injury dynamics:
+
+| Attribute | Effect |
+|-----------|--------|
+| DUR (Durability) | Reduces chance of injury occurring (5% reduction per point above 5) |
+| RES (Resilience) | Reduces severity of injuries (10% reduction per point above 5) |
+| SBY (Stability) | Speeds up recovery time (10% reduction per point above 5) |
+
+## Injury Triggers and Chances
+
+Characters can be injured through various triggers:
+
+| Trigger | Base Chance | Notes |
+|---------|-------------|-------|
+| Knockout (KO) | 30% | Primary injury trigger |
+| Low Health (<20%) | 15% | Secondary injury trigger |
+| Multiple Convergence Losses | 10% | Minor trigger |
+
+## Injury Severities and Recovery
+
+Injuries are categorized by severity:
+
+| Severity | Recovery Time | Notes |
+|----------|---------------|-------|
+| MINOR | 1 match | Quick recovery |
+| MODERATE | 2-3 matches | Short-term absence |
+| MAJOR | 4-6 matches | Significant absence |
+| SEVERE | 7-10 matches | Long-term injury |
+
+## Body Parts and Attribute Penalties
+
+Injuries affect different attributes based on body part:
+
+| Body Part | Primary Penalty | Secondary Penalty |
+|-----------|-----------------|-------------------|
+| Head | Focus/Speed -2 | Willpower -1 |
+| Arm | Strength -2 | Speed -1 |
+| Leg | Speed -2 | Durability -1 |
+| Torso | Durability -2 | Strength -1 |
+| Back | Durability -2 | Focus/Speed -1 |
+| Psychological | Willpower -2 | Leadership -1 |
+
+## Example Integration Results
+
+With the injury system integrated, match reports will include injury information:
+
+```
+=== MATCH SUMMARY ===
+Team 001 vs Team 002
+
+RESULT: Team 001 3 - 1 Team 002
+WINNER: Team 001
+
+INJURY REPORT:
+New Injuries:
+- Alice: Concussion (MODERATE)
+  Recovery time: 3 matches
+- Eve: Broken Ribs (MAJOR)
+  Recovery time: 5 matches
+
+Recovered from Injury:
+- Bob recovered from Sprained Ankle
+```
+
+## Customization
+
+You can customize the injury system by modifying the following parameters in `injury_system.py`:
+
+- `recovery_times` - Recovery timelines for each severity level
+- `injury_types` - Types of injuries by body part
+- `attribute_penalties` - Attribute effects by body part
+- `base_injury_chance` - Base chance of injury after KO
+
+## Manually Adding Injuries
+
+You can manually add injuries to characters using:
+
+```python
+from injury_system import InjurySeverity
+
+# Add a major injury to a character
+injury_system.manually_add_injury(
+    character,
+    "Broken Arm",
+    InjurySeverity.MAJOR,
+    5  # recovery matches
+)
+```
+
+## Troubleshooting
+
+1. **Missing files error**: Ensure all required files are in the correct locations
+2. **Import errors**: Check that the files are in the Python path
+3. **Persistence errors**: Make sure the data/persistence directory exists and is writable
+4. **Integration errors**: Check the logs for specific error messages
+
+For any issues, check the logs for detailed error messages.

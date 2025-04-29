@@ -1,0 +1,19 @@
+
+# Configuration Update Instructions
+# --------------------------------
+#
+# Add these settings to your meta_simulator_config_v4_2.py file:
+
+"features": {
+    "per_board_pgn": True,      # Generate individual PGN files per board
+    "aggregate_match_pgn": True, # Generate aggregated match PGN file
+    "stamina_enabled": True      # Enable stamina system
+},
+"stamina_settings": {
+    "stamina_decay_per_round_multiplier": 1.15,
+    "low_stamina_extra_damage_taken_percent": 20,
+    "base_stamina_value": 100,
+    "base_stamina_decay_per_round": 5,
+    "base_stamina_recovery_per_day": 15,
+    "low_stamina_threshold": 35
+}

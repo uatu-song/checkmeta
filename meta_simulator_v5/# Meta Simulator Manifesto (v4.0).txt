@@ -1,0 +1,78 @@
+# Meta Simulator Manifesto (v4.0)
+
+## 🔥 Core Mission
+
+> *The simulator must behave like a real-world engine, not a fragile project.*  
+> *Every game, team, and system must be protected by design, not by luck.*
+
+
+---
+
+## 🔢 Non-Negotiable Rules
+
+| Rule | Enforcement |
+|:-----|:------------|
+| 8v8 Team Lineups | Every team fields exactly 8 players. |
+| No Inner Division Matches | Undercurrent plays Overlay only. Always enforced. |
+| Alternate Home/Away | Swap sides every day, starting from Day 1. |
+| Independent Chess Matches | Each player plays their own independent game. |
+| 5 Matches per Day | Exactly 5 matches simulated daily. |
+| 5 Days per Week | Monday through Friday only. |
+| Calendar Anchoring | Day 1 is 4/7/25. Day 16 is 4/28/25. |
+| Data Authority | All lineups, IDs, divisions loaded from `/data/` real files. |
+| No Sample Data | Fail fast if real data missing. No dummy placeholders allowed. |
+| Mandatory PGNs | Every chess game must output a valid PGN or simulation fails. |
+| Gatekeeper Validation | System refuses to run if critical violations detected. |
+
+---
+
+## 🛡️ Protective Upgrades
+
+| Addition | Reason |
+|:---------|:-------|
+| Validator Before Simulation | Early detection of missing pieces. |
+| System Registry | New systems must self-register clearly. |
+| Strict Naming Conventions | Class: `CamelCase`, File: `snake_case.py`, Function: `snake_case()`. |
+| Formal Logging | No print spam. Structured logs only. |
+| Critical Fail Early | If missing dependency detected, simulation halts immediately. |
+| Dead Code Scanner | Detect unused methods and imports. |
+| Auto Formatter Option | Optional `black`/`ruff` style enforcement checkpoints. |
+| Clear Versioning | Major versions: `v3.4`, `v3.5`, etc. Snapshots maintained. |
+| Continuous Savepoints | Full backups every 5 matchdays to `/build/snapshots/`. |
+| No Wildcard Imports | (`from module import *`) forbidden. Explicit imports only. |
+
+
+---
+
+## 📆 Match Engine Flow
+
+```plaintext
+START
+|
+|-> Validate configuration integrity
+|-> Load real teams from /data/
+|-> Assign legal matchups (no inner-division)
+|-> Assign players to their own chess boards
+|-> Independently play all 16 games per match
+|-> Save PGNs after every game
+|-> Update match results, stats, standings
+|-> Alternate home/away
+|-> Save day report
+|
+END
+```
+
+---
+
+## 🌟 Engineering Principle
+
+> *If it can't survive 50 days of full league play without silent failure, it doesn't belong in the codebase.*
+
+
+---
+
+## 🔐 Final Rule
+
+**Never trust luck. Trust structure.**  
+**Never hope code behaves. Guarantee it behaves.**  
+**The Simulator Must Endure.**

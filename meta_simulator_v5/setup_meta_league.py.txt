@@ -1,0 +1,129 @@
+#!/usr/bin/env python3
+"""
+META League Simulator Setup Script
+Creates the necessary directory structure and data files for the simulator
+"""
+
+import os
+import shutil
+import json
+import csv
+import argparse
+
+def create_directory_structure():
+    """Create the required directory structure"""
+    directories = [
+        "data",
+        "results",
+        "results/pgn",
+        "results/reports",
+        "logs",
+        "backups"
+    ]
+    
+    for directory in directories:
+        os.makedirs(directory, exist_ok=True)
+        print(f"Created directory: {directory}")
+    
+    return True
+
+def copy_data_files(source_dir):
+    """Copy data files to the data directory"""
+    data_files = [
+        "teams.csv",
+        "players.csv",
+        "traits.csv",
+        "divisions.csv",
+        "player_traits.csv",
+        "lineups_day1.csv",
+        "matchups.csv"
+    ]
+    
+    for file_name in data_files:
+        source_path = os.path.join(source_dir, file_name)
+        dest_path = os.path.join("data", file_name)
+        
+        if os.path.exists(source_path):
+            shutil.copy2(source_path, dest_path)
+            print(f"Copied {file_name} to data directory")
+        else:
+            print(f"Warning: Could not find {file_name} in source directory")
+    
+    return True
+
+def copy_config_file(source_dir):
+    """Copy config.json to the root directory"""
+    source_path = os.path.join(source_dir, "config.json")
+    
+    if os.path.exists(source_path):
+        shutil.copy2(source_path, "config.json")
+        print("Copied config.json to root directory")
+        return True
+    else:
+        print("Warning: Could not find config.json in source directory")
+        return False
+
+def create_test_pgn():
+    """Create a test PGN file to verify structure"""
+    test_pgn_content = """[Event "META League Test Match"]
+[Site "META League Simulator"]
+[Date "2025.04.07"]
+[Round "1"]
+[White "Test Player 1"]
+[Black "Test Player 2"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Qc7 12. Nbd2 cxd4 13. cxd4 Nc6 14. Nb3 a5 15. Be3 a4 16. Nbd2 Bd7 17. Rc1 Qb8 18. Bb1 Rc8 19. d5 Nb4 20. Bd4 Rxc1 21. Qxc1 Qa7 22. Qd1 Rc8 23. a3 Nc2 24. Bxc2 Qxd4 25. Bb1 Qb6 26. Qe2 Bc5 27. Bd3 Bb7 28. Qe3 Qxe3 29. Rxe3 Nd7 30. Kf1 f6 31. Ke2 Kf7 32. Kd2 g6 33. Kc2 Bf8 34. Kb1 Bg7 35. g4 h5 36. gxh5 gxh5 37. Kc2 Re8 38. Rg3 Bh6 39. Nh4 Nf8 40. Rg6 Ng6 41. Nxg6 Kxg6 42. Nf3 Bd2 43. Bxb5 Bxf3 44. Bd3+ Kg7 45. Bxf6+ Kxf6 46. exf3 Rc8+ 47. Kb1 a3 48. bxa3 Bxa3 49. f4 exf4 50. Kb1 Bb4 51. Kb2 Bc3+ 52. Kb3 Be5 53. h4 Kg6 54. Kc4 Rxc4+ 55. Bxc4 Kf5 56. f3 Bd4 57. Bd3+ Ke5 58. Bc4 Bc3 59. a4 Bb4 60. Bd3 Bc5 61. Be2 Bd4 62. Bd3 f6 63. Kd2 Kxd5 64. a5 Kc5 65. a6 Kb6 66. Be4 Bxa6 67. Bxa8 Bb7 68. Bd5 Bc8 69. Ke2 Kb5 70. Kf2 Kb4 71. Kg2 Kc3 72. Kg3 Kd2 73. Kxf4 Be6 74. Be4 Ke2 75. Kg5 Bh3 76. Kxf6 Kxf3 77. Bd5+ Kg3 78. Ke5 Bf1 79. Kd4 Kxh4 80. Kc3 Kg5 81. Kb2 Kf6 82. Ka3 Ke7 83. Kb4 Kd8 84. Kb5 Bd3+ 85. Kb6 Kd7 86. Bf3 Bf5 87. Bg2 Be6 88. Bf3 Bf5 89. Kb7 Be6 90. Bg2 h4 91. Bh3 h3 92. Bxe6+ Kxe6 93. Kc6 Kf6 94. Kd5 Kg5 95. Ke4 Kg4 96. Ke3 h2 97. Ke2 Kg3 98. Ke1 h1=Q# 0-1
+"""
+    
+    os.makedirs("results/pgn", exist_ok=True)
+    with open("results/pgn/test_match.pgn", "w") as f:
+        f.write(test_pgn_content)
+    
+    print("Created test PGN file in results/pgn directory")
+    return True
+
+def check_python_dependencies():
+    """Check for required Python dependencies"""
+    try:
+        import pandas
+        import chess
+        print("Required Python dependencies found")
+        return True
+    except ImportError as e:
+        print(f"Missing Python dependency: {e}")
+        print("Please install required dependencies with:")
+        print("pip install pandas python-chess")
+        return False
+
+def main():
+    """Main setup function"""
+    parser = argparse.ArgumentParser(description="META League Simulator Setup Script")
+    parser.add_argument("--source", help="Source directory containing data files", default=".")
+    parser.add_argument("--test", action="store_true", help="Create test files")
+    
+    args = parser.parse_args()
+    
+    print("Setting up META League Simulator...")
+    
+    # Check Python dependencies
+    check_python_dependencies()
+    
+    # Create directory structure
+    create_directory_structure()
+    
+    # Copy data files
+    copy_data_files(args.source)
+    
+    # Copy config file
+    copy_config_file(args.source)
+    
+    # Create test files if requested
+    if args.test:
+        create_test_pgn()
+    
+    print("\nSetup complete! You can now run the META League Simulator.")
+    print("To run the simulator, use: python meta_simulator_v5.py --config config.json")
+
+if __name__ == "__main__":
+    main()

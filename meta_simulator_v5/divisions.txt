@@ -1,0 +1,3 @@
+division_id,division_name,bonus_type,bonus_value
+div001,Undercurrent,stamina_regen,1.1
+div002,Overlay,critical_chance,1.15

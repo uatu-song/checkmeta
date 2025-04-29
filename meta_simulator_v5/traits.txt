@@ -1,0 +1,42 @@
+trait_id,name,type,triggers,formula_key,formula_expr,bound_nbid,stamina_cost,cooldown,description
+tr001,Tactical Genius,active,pre-move,board_evaluate,+15%,tactic,10,2,Increases board evaluation by 15% for better move selection
+tr002,Rally Cry,active,post-move,team_morale,+10,leader,15,3,Boosts team morale by 10 points after successful move
+tr003,Iron Defense,passive,damage_taken,-20%,defend,5,0,Reduces incoming damage by 20%
+tr004,Swift Strike,active,pre-move,move_speed,+2,speed,10,2,Allows selecting from 2 additional candidate moves
+tr005,Berserker Rage,active,hp_below_30,attack_power,+30%,strength,15,4,Increases attack power by 30% when HP falls below 30%
+tr006,Healing Touch,active,ally_hp_below_40,heal_ally,+15,support,20,3,Heals an ally for 15 HP when their health falls below 40%
+tr007,Convergence Master,passive,convergence,convergence_power,+25%,tactical,0,0,Increases convergence damage by 25%
+tr008,Endurance,passive,stamina_regen,+5,endurance,0,0,Regenerates 5 additional stamina points per round
+tr009,Sacrifice,active,ally_ko,revenge_boost,+20%,team,25,5,Boosts all stats by 20% when an ally is knocked out
+tr010,Critical Strike,active,attack,critical_chance,15%,combat,10,2,15% chance to deal double damage on attacks
+tr011,Inspire,active,round_start,team_boost,+5%,leader,15,4,Increases all allies' stats by 5% at the start of a round
+tr012,Counter Attack,passive,when_hit,counter_damage,50%,reflex,0,0,Returns 50% of damage received back to attacker
+tr013,Focus,active,pre-move,accuracy,+25%,precision,10,2,Increases move accuracy by 25% for the next move
+tr014,Adrenaline Rush,active,hp_below_50,speed_boost,+30%,reflex,15,3,Increases speed by 30% when HP falls below 50%
+tr015,Shield Wall,active,pre-move,team_defense,+15%,defense,20,4,Increases team's defense by 15% for one round
+tr016,Tactical Retreat,active,hp_below_25,damage_avoid,100%,evasion,25,5,Guaranteed to avoid the next attack when HP is below 25%
+tr017,Mentor,passive,ally_level_up,xp_boost,+20%,wisdom,0,0,Allies gain 20% more XP when they level up
+tr018,Checkmate Vision,active,pre-move,checkmate_sight,+3,tactical,15,3,Can see checkmate patterns up to 3 moves ahead
+tr019,Adaptive Strategy,passive,round_change,stat_adapt,+10%,flexibility,0,0,Adapts stats based on opponent's strengths each round
+tr020,Morale Boost,active,team_morale_low,morale_restore,+25,charisma,15,3,Restores 25 morale points to the team when morale is low
+tr021,Stamina Surge,active,stamina_below_30,stamina_restore,+40,endurance,20,4,Restores 40 stamina points when stamina falls below 30%
+tr022,Precise Strike,active,attack,ignore_defense,25%,precision,15,2,Ignores 25% of target's defense on attacks
+tr023,Team Shield,active,ally_in_danger,damage_redirect,75%,protect,25,4,Redirects 75% of damage from an ally in danger to self
+tr024,Momentum,passive,consecutive_hits,damage_stack,+10%,combo,0,0,Each consecutive hit increases damage by 10% (stacks)
+tr025,Battle Cry,active,round_start,intimidate,15%,presence,15,3,15% chance to intimidate opponents, reducing their stats
+tr026,Tactical Insight,passive,pre-move,opponent_predict,60%,analysis,0,0,60% chance to predict opponent's next move
+tr027,Resilience,passive,ko_resist,survive_lethal,15%,willpower,0,0,15% chance to survive a lethal hit with 1 HP
+tr028,Vengeance,active,ally_defeated,power_boost,+35%,rage,20,4,Increases attack power by 35% when an ally is defeated
+tr029,Quicksilver,active,pre-move,extra_move,15%,speed,30,5,15% chance to make an additional move in the same round
+tr030,Mind Games,active,pre-move,confuse_opponent,25%,psychological,15,3,25% chance to confuse opponent, causing them to make a suboptimal move
+tr031,Undying Will,passive,match_point,stat_boost,+25%,determination,0,0,Increases all stats by 25% when team is at match point
+tr032,Perfect Defense,active,high_threat,damage_negate,100%,defense,30,5,Completely negates the next attack when threat level is high
+tr033,Synergy,passive,adjacent_ally,stat_share,15%,teamwork,0,0,Shares 15% of highest stat with adjacent allies
+tr034,Tactical Sacrifice,active,piece_sacrifice,power_gain,+40%,strategy,20,3,Sacrificing a piece increases power of next move by 40%
+tr035,Battlefield Control,passive,board_position,zone_control,+20%,territory,0,0,Controls 20% more board space with effective piece placement
+tr036,Overcharge,active,stamina_full,power_conversion,30%,energy,25,4,Converts 30% of stamina into additional attack power
+tr037,Mental Fortress,passive,morale_defense,reduce_effects,50%,mental,0,0,Reduces negative morale effects by 50%
+tr038,Battle Rhythm,passive,move_pattern,combo_boost,+5%,harmony,0,0,Each move in same pattern increases effectiveness by 5%
+tr039,Strategic Opening,active,match_start,position_advantage,+15%,opener,15,1,Gains 15% position advantage at the start of a match
+tr040,Final Stand,active,last_survivor,all_stats,+50%,heroic,35,0,Increases all stats by 50% when last standing team member
+tr041,Grandmaster Insight,passive,board_evaluation,perfect_move,10%,mastery,0,0,10% chance to find the perfect move in any position

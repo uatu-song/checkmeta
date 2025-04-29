@@ -1,0 +1,217 @@
+# Healing System Integration Guide
+
+This guide explains how to integrate the Healing Mechanics into the META Fantasy League Simulator. The healing system extends the injury system, allowing characters with healing traits to treat injuries between matches at the cost of their own stamina.
+
+## Overview
+
+The Healing System consists of two main components:
+
+1. **Healing Mechanics** (`healing_mechanics.py`) - Core system for healing mechanics and injury treatment
+2. **Healing Integration** (`healing_integration.py`) - Module that connects the healing system to the simulator
+
+## Features
+
+- **Healer Characters** - Characters with healing traits can treat team injuries
+- **Stamina-Based Healing** - Healers expend stamina to perform healing
+- **Severity-Based Mechanics** - More severe injuries require more stamina and have lower success rates
+- **Strategic Team Management** - Balance using healers in combat vs. keeping them available for treatment
+- **Healing History** - Track healing attempts and success rates over time
+- **Healer Efficiency Metrics** - Analyze healer performance and effectiveness
+
+## Prerequisites
+
+The Healing System requires the Injury System to be installed and activated first. Make sure you have:
+
+1. `injury_system.py` installed
+2. The Injury System properly integrated with the simulator
+
+## Installation
+
+1. Copy the following files to your project directory:
+   - `healing_mechanics.py`
+   - `healing_integration.py`
+
+2. Ensure the persistence directory exists:
+   ```
+   mkdir -p data/persistence
+   ```
+
+## Integration Steps
+
+### Option 1: Easy Integration (Recommended)
+
+Add the following code to your main script after integrating the injury system:
+
+```python
+from healing_integration import integrate_healing_mechanics
+
+# Initialize your simulator
+simulator = MetaLeagueSimulator()
+
+# Integrate injury system first
+integrate_injury_system(simulator)
+
+# Integrate healing mechanics
+integrate_healing_mechanics(simulator)
+
+# Run simulation
+simulator.run_matchday(day_number=1)
+```
+
+### Option 2: Manual Integration
+
+For more control over the integration process:
+
+```python
+from healing_integration import HealingIntegration
+
+# Initialize your simulator
+simulator = MetaLeagueSimulator()
+
+# Ensure injury system is active
+# ...
+
+# Initialize healing integration
+healing_integration = HealingIntegration(simulator)
+
+# Activate healing mechanics
+success = healing_integration.activate()
+
+# Enhance visualization (optional)
+if success:
+    healing_integration.enhance_visualization()
+    healing_integration.add_manual_healing_command()
+
+# Run simulation
+simulator.run_matchday(day_number=1)
+```
+
+## How Healing Works
+
+### Healing Traits
+
+Characters with any of the following traits can perform healing:
+
+| Trait | Healing Power (1-10) |
+|-------|----------------------|
+| healing | 5 |
+| rapid_healing | 7 |
+| regeneration | 8 |
+| medical_expertise | 6 |
+| restoration | 6 |
+| recovery_aura | 4 (team-wide) |
+
+### Stamina Costs
+
+Healing costs stamina based on injury severity:
+
+| Severity | Stamina Multiplier |
+|----------|-------------------|
+| MINOR | 1.0x (15 stamina) |
+| MODERATE | 1.5x (22.5 stamina) |
+| MAJOR | 2.0x (30 stamina) |
+| SEVERE | 3.0x (45 stamina) |
+
+### Success Chances
+
+Healing success chances vary by injury severity:
+
+| Severity | Base Success Chance |
+|----------|-------------------|
+| MINOR | 80% |
+| MODERATE | 60% |
+| MAJOR | 40% |
+| SEVERE | 20% |
+
+Success chance is modified by:
+- Healer's WIL (Willpower) attribute (+/- 20%)
+- Injured character's RES (Resilience) attribute (+/- 10%)
+- Healer's trait power (+/- 30%)
+
+### Recovery Effects
+
+Successful healing reduces recovery time:
+
+| Severity | Recovery Reduction |
+|----------|-------------------|
+| MINOR | 1 match (complete healing) |
+| MODERATE | 1 match |
+| MAJOR | 1 match |
+| SEVERE | 1 match |
+
+## Strategic Considerations
+
+The healing system creates important strategic decisions:
+
+1. **Healer Deployment** - Using healers in matches means they have less stamina for post-match healing
+2. **Stamina Management** - Healers must conserve stamina to treat multiple injuries
+3. **Healing Prioritization** - Deciding which injuries to treat first
+4. **Healer Development** - Investing in WIL to improve healing chances
+5. **Team Composition** - Ensuring teams have adequate healing capabilities
+
+## Manual Healing
+
+You can manually trigger healing using:
+
+```python
+# Attempt to heal an injured character
+result = simulator.heal_injuries("healer_id_123", "injured_id_456")
+
+# Check result
+if result["success"]:
+    print(f"Healing successful! Recovery reduced by {result['reduction']} matches")
+else:
+    print(f"Healing failed: {result['error']}")
+```
+
+## Healing Reports
+
+The system generates detailed healing reports:
+
+```
+=== HEALING REPORT: TEAM t001 ===
+Total healing attempts: 14
+Successful healings: 9 (64.3%)
+Total stamina spent: 285.0
+Total recovery time reduced: 11 matches
+
+RECENT HEALING ACTIVITIES:
+  2025-04-27: Alice -> Bob (Broken Arm)
+    Successful attempt, 30.0 stamina used, 1 matches reduced
+  2025-04-27: Charlie -> Diana (Concussion)
+    Failed attempt, 22.5 stamina used
+```
+
+## Healer Efficiency
+
+You can analyze healer efficiency with:
+
+```python
+efficiency = simulator.healing_mechanics.get_healer_efficiency(team)
+
+for healer_id, stats in efficiency.items():
+    print(f"{stats['healer_name']}:")
+    print(f"  Success rate: {stats['success_rate']:.1%}")
+    print(f"  Stamina per success: {stats['stamina_per_success']:.1f}")
+    print(f"  Reduction per stamina: {stats['reduction_per_stamina']:.3f}")
+```
+
+## Customization
+
+You can customize the healing system by modifying the following parameters in `healing_mechanics.py`:
+
+- `healing_traits` - List of traits that grant healing capabilities
+- `healing_power` - Power rating for each healing trait
+- `base_stamina_cost` - Base stamina cost for healing attempts
+- `severity_cost_multipliers` - Stamina cost multipliers by severity
+- `base_success_chances` - Success chances by severity
+- `recovery_reductions` - Recovery time reduction by severity
+
+## Troubleshooting
+
+1. **"Injury system not found" error**: Ensure you've activated the injury system before activating the healing system
+2. **Healing not working**: Make sure characters have healing traits in their trait list
+3. **No healing occurring**: Check if healers have sufficient stamina for healing attempts
+4. **Integration errors**: Check the logs for specific error messages
+
+For any issues, check the logs for detailed error messages.

@@ -1,0 +1,11 @@
+team_id,team_name,division,coach_name,home_court_advantage
+t001,Flame Knights,Undercurrent,Alexis Morgan,1.05
+t002,Thunder Hammers,Undercurrent,Jordan Lee,1.05
+t003,Frost Guardians,Undercurrent,Taylor Chen,1.05
+t004,Storm Raiders,Undercurrent,Casey Williams,1.05
+t005,Shadow Wolves,Undercurrent,Quinn Rodriguez,1.05
+t006,Solar Hawks,Overlay,Riley Johnson,1.05
+t007,Lunar Foxes,Overlay,Blake Thompson,1.05
+t008,Terra Titans,Overlay,Morgan King,1.05
+t009,Cosmic Falcons,Overlay,Avery Barnes,1.05
+t010,Astral Panthers,Overlay,Dakota Green,1.05
