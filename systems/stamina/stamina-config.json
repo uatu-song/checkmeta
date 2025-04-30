@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "base_stamina": 100,
+  "base_decay": 2.0,
+  "decay_multiplier": 1.15,
+  "base_recovery": 5.0,
+  "recovery_multiplier": 1.0,
+  "overnight_recovery_percent": 70,
+  "thresholds": {
+    "60": [
+      {
+        "id": "minor_fatigue",
+        "effect": "accuracy_penalty",
+        "value": 0.05,
+        "description": "Character's accuracy is slightly reduced"
+      }
+    ],
+    "40": [
+      {
+        "id": "moderate_fatigue",
+        "effect": "damage_penalty",
+        "value": 0.10,
+        "description": "Character takes 10% more damage"
+      },
+      {
+        "id": "trait_restriction",
+        "effect": "trait_chance_penalty",
+        "value": 0.25,
+        "description": "Trait activation chance reduced by 25%"
+      }
+    ],
+    "20": [
+      {
+        "id": "severe_fatigue",
+        "effect": "damage_penalty",
+        "value": 0.20,
+        "description": "Character takes 20% more damage"
+      },
+      {
+        "id": "trait_lockout",
+        "effect": "high_cost_trait_lockout",
+        "value": 1.0,
+        "description": "High-cost traits cannot be used"
+      },
+      {
+        "id": "resignation_risk",
+        "effect": "resignation_chance",
+        "value": 0.05,
+        "description": "5% chance per turn to resign due to exhaustion"
+      }
+    ]
+  },
+  "action_costs": {
+    "standard_move": 1.0,
+    "trait_activation": 2.0,
+    "convergence_assist": 3.0,
+    "convergence_target": 5.0,
+    "dodging": 1.5,
+    "counter_attack": 2.5,
+    "special_maneuver": 4.0
+  },
+  "trait_cost_multipliers": {
+    "low": 0.5,
+    "medium": 1.0,
+    "high": 2.0,
+    "extreme": 3.0
+  }
+}

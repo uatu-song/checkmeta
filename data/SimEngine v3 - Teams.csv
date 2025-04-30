@@ -1,0 +1,11 @@
+Tab,team_id,,player_id,team_name,division,team_synergy,logo_path,primary_color,secondary_color
+Teams,T001,,"F031, F045, F046, F051, F056, F067, F077, F089, F118, F121, F126, F156",Gambit Is A Pretty Pretty Princess,Undercurrent,Sample team_synergy,/assets/logo_path/1.png,#F81FC6,#A99B24
+Teams,T002,,"F021, F022, F055, F069, F073, F075, F109, F116, F133, F141, F150, F160",Costco Wholesale,Overlay,Sample team_synergy,/assets/logo_path/2.png,#22F548,#068964
+Teams,T003,,"F011, F028, F029, F035, F068, F076, F090, F096, F115, F124, F130, F142",Sterling's Silly Soldiers,Overlay,Sample team_synergy,/assets/logo_path/3.png,#CE2A36,#2634A6
+Teams,T004,,"F015, F027, F047, F059, F074, F095, F097, F113, F129, F136, F146, F149",Dumb and Dumber Returns,Undercurrent,Sample team_synergy,/assets/logo_path/4.png,#4840BC,#FDFAD1
+Teams,T005,,"F010, F012, F039, F043, F052, F060, F064, F079, F108, F114, F125, F144",Ligmasigma II,Undercurrent,Sample team_synergy,/assets/logo_path/5.png,#335BAC,#D99A1C
+Teams,T006,,"F005, F041, F042, F057, F072, F082, F084, F120, F127, F152, F164, F165",Pigeon Desk,Overlay,Sample team_synergy,/assets/logo_path/6.png,#B5B829,#2749F8
+Teams,T007,,"F002, F020, F025, F058, F098, F104, F105, F107, F132, F147, F163, F166",Agents of Vishanti,Overlay,Sample team_synergy,/assets/logo_path/7.png,#0167A7,#5DF188
+Teams,T008,,"F006, F009, F023, F038, F081, F123, F134, F151, F154, F157, F158, F159",Slow And Threatening,Undercurrent,Sample team_synergy,/assets/logo_path/8.png,#D279D0,#F7BC64
+Teams,T009,,"F013, F014, F017, F018, F037, F044, F050, F071, F091, F103, F138, F155",Amber,Undercurrent,Sample team_synergy,/assets/logo_path/9.png,#A4D282,#BA26C8
+Teams,T010,,"F003, F048, F063, F080, F086, F102, F106, F112, F117, F131, F135, F140","Your honor, we were just being silly",Overlay,Sample team_synergy,/assets/logo_path/10.png,#C6F6BC,#E330B0
