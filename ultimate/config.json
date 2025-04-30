@@ -1,0 +1,72 @@
+{
+  "version": "5.0.0",
+  "paths": {
+    "data_dir": "data",
+    "results_dir": "results",
+    "pgn_dir": "results/pgn",
+    "reports_dir": "results/reports",
+    "logs_dir": "logs",
+    "backups_dir": "backups"
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "features": {
+    "per_board_pgn": true,
+    "aggregate_match_pgn": true,
+    "stamina_enabled": true,
+    "injury_enabled": true,
+    "xp_enabled": true,
+    "synergy_enabled": true,
+    "morale_enabled": true,
+    "combat_calibration_enabled": true
+  },
+  "combat_calibration": {
+    "health_settings": {
+      "base_hp_multiplier": 1.0
+    },
+    "damage_settings": {
+      "base_damage_multiplier": 1.25
+    },
+    "stamina_settings": {
+      "stamina_decay_per_round_multiplier": 1.15,
+      "low_stamina_extra_damage_taken_percent": 20
+    },
+    "morale_settings": {
+      "morale_loss_per_ko_multiplier": 1.10,
+      "morale_collapse_enabled": true,
+      "morale_collapse_threshold_percent": 30
+    },
+    "convergence_settings": {
+      "convergence_damage_multiplier": 2.0
+    },
+    "injury_settings": {
+      "injury_enabled": true,
+      "injury_trigger_stamina_threshold_percent": 35
+    }
+  },
+  "simulation": {
+    "max_rounds": 30,
+    "ko_threshold": 4,
+    "team_hp_threshold": 30,
+    "max_convergences_per_char": 3,
+    "home_advantage_factor": 0.1,
+    "weeks_per_season": 10
+  },
+  "reporting": {
+    "generate_match_reports": true,
+    "generate_day_reports": true,
+    "generate_week_reports": true,
+    "generate_season_reports": true,
+    "generate_charts": true,
+    "report_format": "markdown"
+  },
+  "development": {
+    "debug_mode": false,
+    "dump_state_on_error": true
+  },
+  "advanced": {
+    "auto_backup_frequency": 5
+  }
+}

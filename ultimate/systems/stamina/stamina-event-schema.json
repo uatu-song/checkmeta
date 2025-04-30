@@ -1,0 +1,223 @@
+{
+  "version": "1.0.0",
+  "event_types": {
+    "stamina_drain": {
+      "description": "Emitted when a character's stamina is drained",
+      "required_fields": [
+        "character_id",
+        "amount",
+        "reason",
+        "remaining",
+        "match_id",
+        "turn"
+      ],
+      "optional_fields": [
+        "character_name",
+        "team_id"
+      ],
+      "schema": {
+        "character_id": "string",
+        "character_name": "string",
+        "team_id": "string",
+        "amount": "number",
+        "reason": "string",
+        "remaining": "number",
+        "match_id": "string",
+        "turn": "number",
+        "timestamp": "string"
+      }
+    },
+    "stamina_recovery": {
+      "description": "Emitted when a character recovers stamina",
+      "required_fields": [
+        "character_id",
+        "amount",
+        "reason",
+        "remaining",
+        "match_id",
+        "turn"
+      ],
+      "optional_fields": [
+        "character_name",
+        "team_id"
+      ],
+      "schema": {
+        "character_id": "string",
+        "character_name": "string",
+        "team_id": "string",
+        "amount": "number",
+        "reason": "string",
+        "remaining": "number",
+        "match_id": "string",
+        "turn": "number",
+        "timestamp": "string"
+      }
+    },
+    "stamina_effect": {
+      "description": "Emitted when a stamina effect is applied to a character",
+      "required_fields": [
+        "character_id",
+        "effect_id",
+        "effect_type",
+        "value",
+        "stamina",
+        "match_id",
+        "turn"
+      ],
+      "optional_fields": [
+        "character_name",
+        "team_id"
+      ],
+      "schema": {
+        "character_id": "string",
+        "character_name": "string",
+        "team_id": "string",
+        "effect_id": "string",
+        "effect_type": "string",
+        "value": "number",
+        "stamina": "number",
+        "match_id": "string",
+        "turn": "number",
+        "timestamp": "string"
+      }
+    },
+    "stamina_analytics": {
+      "description": "Emitted at the end of a match with overall stamina analytics",
+      "required_fields": [
+        "match_id",
+        "team_a_avg",
+        "team_b_avg",
+        "team_a_fatigue_count",
+        "team_b_fatigue_count",
+        "stamina_advantage"
+      ],
+      "optional_fields": [
+        "match_day",
+        "match_number"
+      ],
+      "schema": {
+        "match_id": "string",
+        "match_day": "number",
+        "match_number": "number",
+        "team_a_avg": "number",
+        "team_b_avg": "number",
+        "team_a_fatigue_count": "number",
+        "team_b_fatigue_count": "number",
+        "stamina_advantage": "string",
+        "timestamp": "string"
+      }
+    },
+    "character_stamina_analytics": {
+      "description": "Emitted at the end of a match with character-specific stamina analytics",
+      "required_fields": [
+        "match_id",
+        "character_id",
+        "initial_stamina",
+        "final_stamina",
+        "stamina_drained",
+        "drained_percent",
+        "status"
+      ],
+      "optional_fields": [
+        "character_name",
+        "team_id",
+        "team",
+        "highest_cost",
+        "highest_cost_event",
+        "trait_constraint"
+      ],
+      "schema": {
+        "match_id": "string",
+        "character_id": "string",
+        "character_name": "string",
+        "team_id": "string",
+        "team": "string",
+        "initial_stamina": "number",
+        "final_stamina": "number",
+        "stamina_drained": "number",
+        "drained_percent": "number",
+        "highest_cost": "number",
+        "highest_cost_event": "string",
+        "status": "string",
+        "trait_constraint": "string",
+        "timestamp": "string"
+      }
+    },
+    "stamina_threshold_crossed": {
+      "description": "Emitted when a character crosses a stamina threshold",
+      "required_fields": [
+        "character_id",
+        "threshold",
+        "direction",
+        "stamina",
+        "match_id",
+        "turn"
+      ],
+      "optional_fields": [
+        "character_name",
+        "team_id",
+        "effects_added",
+        "effects_removed"
+      ],
+      "schema": {
+        "character_id": "string",
+        "character_name": "string",
+        "team_id": "string",
+        "threshold": "number",
+        "direction": "string",  // "up" or "down"
+        "stamina": "number",
+        "effects_added": "array",
+        "effects_removed": "array",
+        "match_id": "string",
+        "turn": "number",
+        "timestamp": "string"
+      }
+    },
+    "day_stamina_summary": {
+      "description": "Emitted at the end of a day with overall stamina summary",
+      "required_fields": [
+        "day",
+        "date",
+        "team_summary",
+        "character_summary"
+      ],
+      "optional_fields": [],
+      "schema": {
+        "day": "number",
+        "date": "string",
+        "team_summary": {
+          "type": "object",
+          "properties": {
+            "team_id": {
+              "type": "object",
+              "properties": {
+                "avg_stamina": "number",
+                "fatigue_counts": {
+                  "type": "object",
+                  "properties": {
+                    "minor": "number",
+                    "moderate": "number",
+                    "severe": "number"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "character_summary": {
+          "type": "object",
+          "properties": {
+            "character_id": {
+              "type": "object",
+              "properties": {
+                "final_stamina": "number",
+                "status": "string"
+              }
+            }
+          }
+        },
+        "timestamp": "string"
+      }
+    }
+  }
+}

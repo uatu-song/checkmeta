@@ -1,0 +1,265 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "META Fantasy League Simulator - Stamina Integration Configuration",
+  "description": "Configuration schema for stamina system integration with trait, convergence, and combat systems",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Configuration version",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "trait": {
+      "type": "object",
+      "description": "Trait system integration configuration",
+      "properties": {
+        "trait_costs": {
+          "type": "object",
+          "description": "Stamina costs for different trait cost levels",
+          "properties": {
+            "default": {
+              "type": "number",
+              "description": "Default stamina cost for traits",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "low": {
+              "type": "number",
+              "description": "Stamina cost for low-cost traits",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "medium": {
+              "type": "number",
+              "description": "Stamina cost for medium-cost traits",
+              "minimum": 2,
+              "maximum": 10
+            },
+            "high": {
+              "type": "number",
+              "description": "Stamina cost for high-cost traits",
+              "minimum": 5,
+              "maximum": 15
+            },
+            "extreme": {
+              "type": "number",
+              "description": "Stamina cost for extreme-cost traits",
+              "minimum": 10,
+              "maximum": 20
+            }
+          },
+          "required": ["default", "low", "medium", "high", "extreme"]
+        },
+        "threshold_restrictions": {
+          "type": "object",
+          "description": "Trait restrictions at different stamina thresholds",
+          "patternProperties": {
+            "^\\d+$": {
+              "type": "array",
+              "description": "Restricted trait cost levels at this threshold",
+              "items": {
+                "type": "string",
+                "enum": ["low", "medium", "high", "extreme"]
+              }
+            }
+          },
+          "required": ["60", "40", "20"]
+        },
+        "fatigue_effectiveness": {
+          "type": "object",
+          "description": "Trait effectiveness modifiers at different stamina thresholds",
+          "patternProperties": {
+            "^\\d+$": {
+              "type": "number",
+              "description": "Effectiveness modifier at this threshold (1.0 = 100%)",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": ["60", "40", "20"]
+        }
+      },
+      "required": ["trait_costs", "threshold_restrictions", "fatigue_effectiveness"]
+    },
+    "convergence": {
+      "type": "object",
+      "description": "Convergence system integration configuration",
+      "properties": {
+        "costs": {
+          "type": "object",
+          "description": "Stamina costs for different convergence roles",
+          "properties": {
+            "initiator": {
+              "type": "number",
+              "description": "Stamina cost for convergence initiator",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "target": {
+              "type": "number",
+              "description": "Stamina cost for convergence target",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "assist": {
+              "type": "number",
+              "description": "Stamina cost for convergence assistant",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "defense": {
+              "type": "number",
+              "description": "Stamina cost for convergence defense",
+              "minimum": 0,
+              "maximum": 10
+            }
+          },
+          "required": ["initiator", "target", "assist", "defense"]
+        },
+        "threshold_modifiers": {
+          "type": "object",
+          "description": "Convergence modifiers at different stamina thresholds",
+          "properties": {
+            "chance": {
+              "type": "object",
+              "description": "Convergence chance modifiers at different stamina thresholds",
+              "patternProperties": {
+                "^\\d+$": {
+                  "type": "number",
+                  "description": "Chance modifier at this threshold (1.0 = 100%)",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              },
+              "required": ["60", "40", "20"]
+            },
+            "damage": {
+              "type": "object",
+              "description": "Convergence damage modifiers at different stamina thresholds",
+              "patternProperties": {
+                "^\\d+$": {
+                  "type": "number",
+                  "description": "Damage modifier at this threshold (1.0 = 100%)",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              },
+              "required": ["60", "40", "20"]
+            },
+            "defense": {
+              "type": "object",
+              "description": "Convergence defense modifiers at different stamina thresholds",
+              "patternProperties": {
+                "^\\d+$": {
+                  "type": "number",
+                  "description": "Defense modifier at this threshold (1.0 = 100%)",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              },
+              "required": ["60", "40", "20"]
+            }
+          },
+          "required": ["chance", "damage", "defense"]
+        },
+        "leadership_stamina_factor": {
+          "type": "number",
+          "description": "Factor for how much leadership affects stamina costs (0-1)",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": ["costs", "threshold_modifiers", "leadership_stamina_factor"]
+    },
+    "combat": {
+      "type": "object",
+      "description": "Combat system integration configuration",
+      "properties": {
+        "damage_taken_multipliers": {
+          "type": "object",
+          "description": "Damage taken multipliers at different stamina thresholds",
+          "patternProperties": {
+            "^\\d+$": {
+              "type": "number",
+              "description": "Damage multiplier at this threshold (1.0 = 100%)",
+              "minimum": 1,
+              "maximum": 2
+            }
+          },
+          "required": ["60", "40", "20"]
+        },
+        "attack_effectiveness": {
+          "type": "object",
+          "description": "Attack effectiveness modifiers at different stamina thresholds",
+          "patternProperties": {
+            "^\\d+$": {
+              "type": "number",
+              "description": "Effectiveness modifier at this threshold (1.0 = 100%)",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": ["60", "40", "20"]
+        },
+        "critical_chance_modifiers": {
+          "type": "object",
+          "description": "Critical hit chance modifiers at different stamina thresholds",
+          "patternProperties": {
+            "^\\d+$": {
+              "type": "number",
+              "description": "Critical chance modifier at this threshold (1.0 = 100%)",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": ["60", "40", "20"]
+        },
+        "stamina_costs": {
+          "type": "object",
+          "description": "Stamina costs for different combat actions",
+          "properties": {
+            "attack": {
+              "type": "number",
+              "description": "Stamina cost for standard attack",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "defense": {
+              "type": "number",
+              "description": "Stamina cost for defense",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "counter": {
+              "type": "number",
+              "description": "Stamina cost for counter attack",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "critical": {
+              "type": "number",
+              "description": "Additional stamina cost for critical hit",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "dodge": {
+              "type": "number",
+              "description": "Stamina cost for dodge",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "per_damage_point": {
+              "type": "number",
+              "description": "Additional stamina cost per point of damage taken",
+              "minimum": 0,
+              "maximum": 0.5
+            }
+          },
+          "required": ["attack", "defense", "counter", "critical", "dodge", "per_damage_point"]
+        }
+      },
+      "required": ["damage_taken_multipliers", "attack_effectiveness", "critical_chance_modifiers", "stamina_costs"]
+    }
+  },
+  "required": ["version", "trait", "convergence", "combat"]
+}
